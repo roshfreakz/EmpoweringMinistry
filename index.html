@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zegen &#8211; Church WordPress Theme</title>
+
+	<link rel="stylesheet" href="css/style1.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel='stylesheet' id='google-fonts-1-css'
+		href='https://fonts.googleapis.com/css?family=Damion%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.2'
+		type='text/css' media='all' />
+	<script type='text/javascript' src='js/jquery4a5f.js?ver=1.12.4-wp'></script>
+	<link rel="icon" href="img/cropped-fav-icon.jpg" sizes="32x32" />
+	<script type="text/javascript">
+		function setREVStartSize(e) {
+			//window.requestAnimationFrame(function() {				 
+			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+			try {
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+				if (e.layout === "fullscreen" || e.l === "fullscreen")
+					newh = Math.max(e.mh, window.RSIH);
+				else {
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl)
+						if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl)
+						if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+					var nl = new Array(e.rl.length),
+						ix = 0,
+						sl;
+					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+					sl = nl[0];
+					for (var i in nl)
+						if (sl > nl[i] && nl[i] > 0) {
+							sl = nl[i];
+							ix = i;
+						}
+					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+				}
+				if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement(
+					"style"));
+				document.getElementById(e.c).height = newh + "px";
+				window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+			} catch (e) {
+				console.log("Failure at Presize of Slider:" + e)
+			}
+			//});
+		};
+	</script>
+</head>
+
+<body
+	class="home page-template-default page page-id-21 wp-embed-responsive theme-zegen woocommerce-no-js elementor-default elementor-kit-17005 elementor-page elementor-page-21"
+	data-zegen="{&quot;scroll_time&quot;:&quot;600&quot;,&quot;scroll_dist&quot;:&quot;40&quot;,&quot;res_width&quot;:1025,&quot;menu_offset&quot;:60,&quot;mobile_menu_offset&quot;:60}">
+	<div class="page-loader"></div>
+	<div class="mobile-header">
+		<div class="mobile-header-inner">
+			<div class="sticky-outer">
+				<div class="sticky-head">
+					<div class="container">
+						<ul class="mobile-header-items nav pull-left">
+							<li class="nav-item">
+								<div class="nav-item-inner"> <a class="mobile-bar-toggle" href="#"><i
+											class="ti-menu"></i></a></div>
+							</li>
+						</ul>
+						<ul class="mobile-header-items nav pull-center">
+							<li class="nav-item">
+								<div class="nav-item-inner">
+									<div class="mobile-logo"><a href="index.html" title="Zegen"><noscript><img
+													class="img-responsive" src="img/mobile-logo-dark.png" alt="Zegen"
+													title="Zegen" /></noscript><img class="lazyload img-responsive"
+												src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+												data-src="img/mobile-logo-dark.png" alt="Zegen" title="Zegen" /></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-bar animate-from-left"> <a class="mobile-bar-toggle close" href="#"></a>
+		<div class="mobile-bar-inner">
+			<div class="container">
+				<ul class="mobile-bar-items nav flex-column mobile-bar-top">
+					<li class="nav-item">
+						<div class="nav-item-inner">
+							<div class="mobile-logo"><a href="index.html" title="Zegen"><noscript><img
+											class="img-responsive" src="img/mobile-logo-dark.png" alt="Zegen"
+											title="Zegen" /></noscript><img class="lazyload img-responsive"
+										src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+										data-src="img/mobile-logo-dark.png" alt="Zegen" title="Zegen" /></a></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="mobile-bar-items nav flex-column mobile-bar-middle">
+					<li class="nav-item">
+						<div class="nav-item-inner">
+							<div class="zegen-mobile-main-menu"></div>
+						</div>
+					</li>
+				</ul>
+				<ul class="mobile-bar-items nav flex-column mobile-bar-bottom">
+					<li class="nav-item">
+						<div class="nav-item-inner">
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page" class="zegen-wrapper">
+		<header class="zegen-header header-absolute">
+			<div class="header-inner">
+				<div class="topbar clearfix">
+					<div class="custom-container topbar-inner">
+						<ul class="topbar-items nav pull-left">
+							<li class="nav-item">
+								<div class="nav-item-inner">
+									<div class="header-address"><span class="ti-location-pin"></span> Chruch, Chennai,
+										TN</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="topbar-items nav pull-right">
+							<li class="nav-item">
+								<div class="nav-item-inner">
+									<ul
+										class="nav social-icons  social-squared social-white social-h-own social-bg-transparent social-hbg-transparent">
+										<li class="nav-item"> <a href="https://www.facebook.com/chruch.official/"
+												class="nav-link social-fb"> <i class=" ti-facebook"></i> </a></li>
+										<li class="nav-item"> <a href="https://twitter.com/chruch"
+												class="nav-link social-twitter"> <i class=" ti-twitter"></i> </a></li>
+										<li class="nav-item"> <a href="https://www.instagram.com/chruch/"
+												class="nav-link social-instagram"> <i class=" ti-instagram"></i> </a>
+										</li>
+										<li class="nav-item"> <a href="https://in.pinterest.com/chruchofficial/"
+												class="nav-link social-pinterest"> <i class=" ti-pinterest"></i> </a>
+										</li>
+										<li class="nav-item"> <a
+												href="https://www.youtube.com/channel/UCAOkwuYxJuOqiYAj1Vy5JIg"
+												class="nav-link social-youtube"> <i class=" ti-youtube"></i> </a></li>
+										<li class="nav-item"> <a href="https://dribbble.com/chruch"
+												class="nav-link social-dribbble"> <i class=" ti-dribbble"></i> </a></li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+				<div class="sticky-outer">
+					<div class="sticky-head">
+						<nav class="navbar clearfix">
+							<div class="custom-container navbar-inner">
+								<ul class="navbar-items nav pull-left">
+									<li class="nav-item">
+										<div class="nav-item-inner">
+											<div class="main-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+											<div class="sticky-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<ul class="navbar-items nav pull-right">
+									<li class="nav-item">
+										<div class="nav-item-inner">
+											<ul id="zegen-main-menu" class="nav zegen-main-menu">
+												<li class="menu-item nav-item">
+													<a href="index.html" class="nav-link">Home</a>
+												</li>
+												<li class="menu-item nav-item">
+													<a href="about.html" class="nav-link">About Us</a>
+												</li>
+												<li class="menu-item  nav-item ">
+													<a href="gallery.html" class="nav-link">Gallery</a>
+												</li>
+												<li class="menu-item  nav-item ">
+													<a href="live.html" class="nav-link">Live</a>
+												</li>
+												<li class="menu-item nav-item ">
+													<a href="contact.html" class="nav-link">Contact Us</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="nav-item">
+										<div class="nav-item-inner">
+											<div class="header-navbar-text-1">
+												<a href="donate-now/index.html" class="h-donate-btn">Donate</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="zegen-content-wrapper">
+			<div class="zegen-content zegen-page">
+				<div class="header-slider-wrapper">
+					<p class="rs-p-wp-fix"></p>
+					<rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"
+						style="background:#000000;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+						<rs-module id="rev_slider_1_1" data-version="6.2.10">
+							<rs-slides>
+								<rs-slide data-key="rs-1" data-title="Web Show" data-thumb="img/zmain-slider-1.jpg"
+									data-anim="ei:d;eo:d;s:d;r:0;t:slidingoverlayhorizontal;sl:d;"> <img
+										src="img/zmain-slider-1.jpg" title="zmain-slider-1.jpg" width="1920"
+										height="1080" data-parallax="5" class="rev-slidebg" data-no-retina>
+									<h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text"
+										data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+										data-rsp_ch="on" data-xy="x:c;y:m;yo:38px,0,-10px,-7px;"
+										data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;"
+										data-dim="w:754px,699px,auto,400px;" data-padding="b:10;"
+										data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
+										data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:5620;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:10;font-family:Poppins;text-transform:uppercase;">God gives us
+										power</h1>
+									<rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" data-type="text"
+										data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,-1px;y:m;yo:-14px,-47px,-55px,-45px;"
+										data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;"
+										data-dim="w:408px,auto,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"
+										data-frame_0_chars="y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;"
+										data-frame_1="st:640;sp:1200;sR:640;"
+										data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:4960;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:11;font-family:Open Sans;text-transform:uppercase;">we help you
+										get things done </rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-14" data-type="text" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,7px;y:m,t,t,t;yo:106px,312px,271px,259px;"
+										data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+										data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+										data-frame_0="y:100%;" data-frame_0_mask="u:t;"
+										data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
+										data-frame_999="o:0;tp:600;st:w;sR:4960;"
+										style="z-index:9;font-family:Open Sans;">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua
+										quis nostrud ullamco nisi. </rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn"
+										data-type="button" data-color="rgba(255,255,255,1)"
+										data-xy="x:c;xo:0,0,0,-3px;y:m;yo:190px,156px,128px,143px;"
+										data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off"
+										data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
+										data-border="bor:3px,3px,3px,3px;" data-frame_0="rX:-70deg;oZ:-50;"
+										data-frame_1="oZ:-50;e:power4.inOut;st:3160;sp:1750;"
+										data-frame_999="o:0;tp:600;st:w;sR:4640;"
+										data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
+										style="z-index:8;background-color:#bf0a30;font-family:Poppins;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+										Contact Us </rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-21" data-type="image" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,10px;yo:256px,133px,102px,116px;"
+										data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+										data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
+										data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;"
+										data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;">
+										<noscript><img src="img/dove.png" width="80" height="80"
+												data-no-retina></noscript><img class="lazyload"
+											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+											data-src="img/dove.png" width="80" height="80" data-no-retina> </rs-layer>
+								</rs-slide>
+								<rs-slide data-key="rs-2" data-title="Web Show"
+									data-thumb="img/zmain-slider-3-100x100.jpg"
+									data-anim="ei:d;eo:d;s:d;r:0;t:slidingoverlayhorizontal;sl:d;"> <img
+										src="img/zmain-slider-3.jpg" title="zmain-slider-3.jpg" width="1920"
+										height="1080" data-parallax="5" class="rev-slidebg" data-no-retina>
+									<h1 id="slider-1-slide-2-layer-2" class="rs-layer Concept-Title" data-type="text"
+										data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+										data-rsp_ch="on" data-xy="x:c;y:m;yo:38px,0,-10px,-7px;"
+										data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
+										data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;"
+										data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
+										data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:5620;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:10;font-family:Poppins;text-transform:uppercase;">We call, price
+										the lord</h1>
+									<rs-layer id="slider-1-slide-2-layer-4" class="Concept-SubTitle" data-type="text"
+										data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,-1px;y:m;yo:-14px,-47px,-55px,-40px;"
+										data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
+										data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"
+										data-frame_0_chars="y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;"
+										data-frame_1="st:640;sp:1200;sR:640;"
+										data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:4960;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:11;font-family:Open Sans;text-transform:uppercase;">WE'RE
+										BUILDING THEM A HOME </rs-layer>
+									<rs-layer id="slider-1-slide-2-layer-14" data-type="text" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,7px;y:m,t,t,t;yo:106px,312px,271px,259px;"
+										data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+										data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+										data-frame_0="y:100%;" data-frame_0_mask="u:t;"
+										data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
+										data-frame_999="o:0;tp:600;st:w;sR:4960;"
+										style="z-index:9;font-family:Open Sans;">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua
+										quis nostrud ullamco nisi. </rs-layer>
+									<rs-layer id="slider-1-slide-2-layer-16" class="res-slide-btn pop rev-btn"
+										data-type="button" data-color="rgba(255,255,255,1)"
+										data-xy="x:c;xo:0,0,0,-3px;y:m;yo:190px,156px,128px,143px;"
+										data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off"
+										data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
+										data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;"
+										data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;"
+										data-frame_999="o:0;tp:600;st:w;sR:4640;"
+										data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
+										style="z-index:8;background-color:#bf0a30;font-family:Poppins;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+										Contact Us </rs-layer>
+									<rs-layer id="slider-1-slide-2-layer-21" data-type="image" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,10px;yo:256px,133px,102px,121px;"
+										data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+										data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
+										data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;"
+										data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;">
+										<noscript><img src="img/loveus.png" width="80" height="80"
+												data-no-retina></noscript><img class="lazyload"
+											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+											data-src="img/loveus.png" width="80" height="80" data-no-retina> </rs-layer>
+								</rs-slide>
+								<rs-slide data-key="rs-3" data-title="Web Show"
+									data-thumb="img/zmain-slider-2-100x100.jpg"
+									data-anim="ei:d;eo:d;s:d;r:0;t:slidingoverlayhorizontal;sl:d;"> <img
+										src="img/zmain-slider-2.jpg" title="zmain-slider-2.jpg" width="1920"
+										height="1080" data-parallax="5" class="rev-slidebg" data-no-retina>
+									<h1 id="slider-1-slide-3-layer-2" class="rs-layer Concept-Title" data-type="text"
+										data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+										data-rsp_ch="on" data-xy="x:c;y:m;yo:38px,0,-10px,-7px;"
+										data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
+										data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;"
+										data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
+										data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:5620;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:10;font-family:Poppins;text-transform:uppercase;">LETS BRING THEM
+										HOME</h1>
+									<rs-layer id="slider-1-slide-3-layer-4" class="Concept-SubTitle" data-type="text"
+										data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,-1px;y:m;yo:-14px,-47px,-55px,-40px;"
+										data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
+										data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"
+										data-frame_0_chars="y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;"
+										data-frame_1="st:640;sp:1200;sR:640;"
+										data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;" data-frame_1_mask="u:t;"
+										data-frame_999="x:left;tp:600;e:power3.in;st:w;sp:1000;sR:4960;"
+										data-frame_999_reverse="x:true;"
+										style="z-index:11;font-family:Open Sans;text-transform:uppercase;">YOU CAN HELP
+										FOR THEM </rs-layer>
+									<rs-layer id="slider-1-slide-3-layer-14" data-type="text" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,7px;y:m,t,t,t;yo:106px,312px,271px,259px;"
+										data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+										data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+										data-frame_0="y:100%;" data-frame_0_mask="u:t;"
+										data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
+										data-frame_999="o:0;tp:600;st:w;sR:4960;"
+										style="z-index:9;font-family:Open Sans;">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua
+										quis nostrud ullamco nisi. </rs-layer>
+									<rs-layer id="slider-1-slide-3-layer-16" class="res-slide-btn pop rev-btn"
+										data-type="button" data-color="rgba(255,255,255,1)"
+										data-xy="x:c;xo:0,0,0,-3px;y:m;yo:190px,156px,128px,143px;"
+										data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off"
+										data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
+										data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;"
+										data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;"
+										data-frame_999="o:0;tp:600;st:w;sR:4640;"
+										data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
+										style="z-index:8;background-color:#bf0a30;font-family:Poppins;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+										Contact Us </rs-layer>
+									<rs-layer id="slider-1-slide-3-layer-21" data-type="image" data-rsp_ch="on"
+										data-xy="x:c;xo:0,0,0,10px;yo:256px,133px,102px,121px;"
+										data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+										data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
+										data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;"
+										data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;">
+										<noscript><img src="img/bible.png" width="80" height="80"
+												data-no-retina></noscript><img class="lazyload"
+											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+											data-src="img/bible.png" width="80" height="80" data-no-retina> </rs-layer>
+								</rs-slide>
+							</rs-slides>
+							<rs-static-layers></rs-static-layers>
+						</rs-module>
+						<script type="text/javascript">
+							setREVStartSize({
+								c: 'rev_slider_1_1',
+								rl: [1240, 1024, 778, 480],
+								el: [750, 550, 500, 480],
+								gw: [1240, 1024, 778, 480],
+								gh: [750, 550, 500, 480],
+								type: 'standard',
+								justify: '',
+								layout: 'fullwidth',
+								mh: "0"
+							});
+							var revapi1,
+								tpj;
+							jQuery(function () {
+								tpj = jQuery;
+								revapi1 = tpj("#rev_slider_1_1")
+								if (revapi1 == undefined || revapi1.revolution == undefined) {
+									revslider_showDoubleJqueryError("rev_slider_1_1");
+								} else {
+									revapi1.revolution({
+										visibilityLevels: "1240,1024,778,480",
+										gridwidth: "1240,1024,778,480",
+										gridheight: "750,550,500,480",
+										perspectiveType: "local",
+										editorheight: "750,550,500,480",
+										responsiveLevels: "1240,1024,778,480",
+										stopAtSlide: 1,
+										stopAfterLoops: 0,
+										stopLoop: true,
+										progressBar: {
+											disableProgressBar: true
+										},
+										navigation: {
+											mouseScrollNavigation: false,
+											onHoverStop: false,
+											touch: {
+												touchenabled: true,
+												touchOnDesktop: true,
+												swipe_min_touches: 50
+											},
+											arrows: {
+												enable: true,
+												tmp: "<div class=\"tp-title-wrap\">  	<div class=\"tp-arr-imgholder\"></div> </div>",
+												style: "zeus",
+												hide_onmobile: true,
+												hide_under: "700px",
+												rtl: true,
+												left: {
+													anim: "right",
+													container: "layergrid",
+													h_align: "right",
+													h_offset: 30,
+													v_offset: 55
+												},
+												right: {
+													anim: "right",
+													container: "layergrid",
+													h_offset: 30,
+													v_offset: -10
+												}
+											}
+										},
+										parallax: {
+											levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+											type: "scroll",
+											origo: "slidercenter",
+											speed: 1000
+										},
+										fallbacks: {
+											allowHTML5AutoPlayOnAndroid: true
+										},
+									});
+								}
+
+							});
+						</script>
+						<script>
+							var htmlDivCss = unescape(
+								".rs-layer.Concept-Content%20a%2C%0A.rs-layer.Concept-Content%20a%3Avisited%20%7B%0A%20%20color%3A%20%23fff%20%21important%3B%0A%20%20border-bottom%3A%201px%20solid%20%23fff%20%21important%3B%0A%20%20font-weight%3A%20700%20%21important%3B%0A%7D%0A%20%20%20%20%20%20%0A.rs-layer.Concept-Content%20a%3Ahover%09%7B%0A%20%20%20border-bottom%3A%201px%20solid%20transparent%20%21important%3B%0A%7D%0A%0A.rs-layer.Concept-Content-Dark%20a%2C%0A.rs-layer.Concept-Content-Dark%20a%3Avisited%20%7B%0A%20%20color%3A%20%23000%20%21important%3B%0A%20%20border-bottom%3A%201px%20solid%20%23000%20%21important%3B%0A%20%20font-weight%3A%20700%20%21important%3B%0A%7D%0A%0A.rs-layer.Concept-Content-Dark%20a%3Ahover%09%7B%0A%20%20%20border-bottom%3A%201px%20solid%20transparent%20%21important%3B%0A%7D%0A%40media%20only%20screen%20and%20%28max-width%3A%20575px%29%20%7B%0A%20%20rs-layer.res-slide-btn%20%7B%0A%20%20%20%20%20%20padding%3A%207px%2016px%20%21important%3B%0A%20%20%20%20%20%20font-size%3A%2013px%20%21important%3B%0A%20%20%7D%0A%7D"
+							);
+							var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+							if (htmlDiv) {
+								htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+							} else {
+								var htmlDiv = document.createElement('div');
+								htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+								document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+							}
+						</script>
+						<script>
+							var htmlDivCss = unescape(
+								"%23rev_slider_1_1_wrapper%20.zeus.tparrows%20%7B%0A%20%20cursor%3Apointer%3B%0A%20%20min-width%3A60px%3B%0A%20%20min-height%3A60px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20display%3Ablock%3B%0A%20%20z-index%3A1000%3B%0A%20%20border-radius%3A50%25%3B%20%20%20%0A%20%20overflow%3Ahidden%3B%0A%20%20background%3Argba%280%2C%200%2C%200%2C%200.38%29%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.zeus.tparrows%3Abefore%20%7B%0A%20%20font-family%3A%20%27revicons%27%3B%0A%20%20font-size%3A17px%3B%0A%20%20color%3A%23ffffff%3B%0A%20%20display%3Ablock%3B%0A%20%20line-height%3A%2060px%3B%0A%20%20text-align%3A%20center%3B%20%20%20%20%0A%20%20z-index%3A2%3B%0A%20%20position%3Arelative%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.zeus.tparrows.tp-leftarrow%3Abefore%20%7B%0A%20%20content%3A%20%27%5Ce824%27%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.zeus.tparrows.tp-rightarrow%3Abefore%20%7B%0A%20%20content%3A%20%27%5Ce825%27%3B%0A%7D%0A%0A%23rev_slider_1_1_wrapper%20.zeus%20.tp-title-wrap%20%7B%0A%20%20background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20position%3Aabsolute%3B%0A%20%20opacity%3A0%3B%0A%20%20transform%3Ascale%280%29%3B%0A%20%20-webkit-transform%3Ascale%280%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%20%20%20border-radius%3A50%25%3B%0A%20%7D%0A%23rev_slider_1_1_wrapper%20.zeus%20.tp-arr-imgholder%20%7B%0A%20%20width%3A100%25%3B%0A%20%20height%3A100%25%3B%0A%20%20position%3Aabsolute%3B%0A%20%20top%3A0px%3B%0A%20%20left%3A0px%3B%0A%20%20background-position%3Acenter%20center%3B%0A%20%20background-size%3Acover%3B%0A%20%20border-radius%3A50%25%3B%0A%20%20transform%3Atranslatex%28-100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28-100%25%29%3B%0A%20%20%20transition%3A%20all%200.3s%3B%0A%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20-moz-transition%3Aall%200.3s%3B%0A%0A%20%7D%0A%23rev_slider_1_1_wrapper%20.zeus.tp-rightarrow%20.tp-arr-imgholder%20%7B%0A%20%20%20%20transform%3Atranslatex%28100%25%29%3B%0A%20%20-webkit-transform%3Atranslatex%28100%25%29%3B%0A%20%20%20%20%20%20%7D%0A%23rev_slider_1_1_wrapper%20.zeus.tparrows%3Ahover%20.tp-arr-imgholder%20%7B%0A%20%20transform%3Atranslatex%280%29%3B%0A%20%20-webkit-transform%3Atranslatex%280%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%20%20%20%20%20%0A%23rev_slider_1_1_wrapper%20.zeus.tparrows%3Ahover%20.tp-title-wrap%20%7B%0A%20%20transform%3Ascale%281%29%3B%0A%20%20-webkit-transform%3Ascale%281%29%3B%0A%20%20opacity%3A1%3B%0A%7D%0A%20%0A"
+							);
+							var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+							if (htmlDiv) {
+								htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+							} else {
+								var htmlDiv = document.createElement('div');
+								htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+								document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+							}
+						</script>
+						<script>
+							var htmlDivCss = unescape(
+								"%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-1%22%5D%20.zeus.tparrows%7B%0Amin-width%3A%2060px%20%21important%3B%0Amin-height%3A%2060px%20%21important%3B%0Abackground%3A%20rgba%280%2C%200%2C%200%2C%200.38%29%20%21important%3B%0A%7D%0A%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-1%22%5D%20.zeus.tparrows%3Abefore%7B%0Aline-height%3A%2060px%20%21important%3B%0Afont-size%3A%2017px%20%21important%3B%0A%7D%0A%0A%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-2%22%5D%20.zeus.tparrows%7B%0Amin-width%3A%2060px%20%21important%3B%0Amin-height%3A%2060px%20%21important%3B%0Abackground%3A%20rgba%280%2C%200%2C%200%2C%200.38%29%20%21important%3B%0A%7D%0A%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-2%22%5D%20.zeus.tparrows%3Abefore%7B%0Aline-height%3A%2060px%20%21important%3B%0Acolor%3A%20%23ffffff%20%21important%3B%0Afont-size%3A%2017px%20%21important%3B%0A%7D%0A%0A%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-3%22%5D%20.zeus.tparrows%7B%0Amin-width%3A%2060px%20%21important%3B%0Amin-height%3A%2060px%20%21important%3B%0Abackground%3A%20rgba%280%2C%200%2C%200%2C%200.38%29%20%21important%3B%0A%7D%0A%23rev_slider_1_1%5Bdata-slideactive%3D%22rs-3%22%5D%20.zeus.tparrows%3Abefore%7B%0Aline-height%3A%2060px%20%21important%3B%0Afont-size%3A%2017px%20%21important%3B%0A%7D%0A%0A"
+							);
+							var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+							if (htmlDiv) {
+								htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+							} else {
+								var htmlDiv = document.createElement('div');
+								htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+								document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+							}
+						</script>
+					</rs-module-wrap>
+				</div>
+				<div class="zegen-content-inner">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="primary" class="content-area clearfix">
+									<div id="page-21" class="post-21 page type-page status-publish hentry">
+										<div data-elementor-type="wp-page" data-elementor-id="21"
+											class="elementor elementor-21" data-elementor-settings="[]">
+											<div class="elementor-inner">
+												<div class="elementor-section-wrap">
+													<section
+														class="elementor-element elementor-element-8516761 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="8516761" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-container elementor-column-gap-no">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-c732bfc elementor-column elementor-col-100 elementor-top-column"
+																	data-id="c732bfc" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-3557e54 elementor-widget elementor-widget-zegenevent"
+																				data-id="3557e54"
+																				data-element_type="widget"
+																				data-widget_type="zegenevent.default">
+																				<div class="elementor-widget-container">
+																					<div class="event-wrapper event-modern event-light shortcode-rand-1 zegen-inline-css"
+																						data-css="&quot;.shortcode-rand-1.event-wrapper .event-inner &gt; *:nth-child(1) { margin-bottom: 20px; }.shortcode-rand-1.event-wrapper.event-dark .event-inner, .shortcode-rand-1.event-wrapper .event-inner, .shortcode-rand-1.event-dark .media-body, .shortcode-rand-1 .media-body { color: #ffffff; }&quot;">
+																						<div class="owl-carousel"
+																							data-loop="0"
+																							data-margin="30"
+																							data-center="0" data-nav="0"
+																							data-dots="0"
+																							data-autoplay="0"
+																							data-items="2"
+																							data-items-tab="1"
+																							data-items-mob="1"
+																							data-duration="5000"
+																							data-smartspeed="250"
+																							data-scrollby="1"
+																							data-autoheight="false">
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										Mar 3<span
+																											class="event-time">7.00
+																											am</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/reflect-the-community-and-serving/index.html"
+																												class="post-title">Event:
+																												Reflect
+																												The
+																												Community
+																												And
+																												Serving</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/reflect-the-community-and-serving/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										Jan 15<span
+																											class="event-time">8.00
+																											am</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/our-sponsorship-meetup-will-be-held-again/index.html"
+																												class="post-title">Our
+																												Sponsorship
+																												Meetup
+																												Will Be
+																												Held
+																												Again</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/our-sponsorship-meetup-will-be-held-again/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										Mar 4<span
+																											class="event-time">12.00
+																											pm</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/lord-is-sufficient-for-all-of-our-needs/index.html"
+																												class="post-title">Event:
+																												Lord is
+																												Sufficient
+																												for all
+																												of our
+																												needs</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/lord-is-sufficient-for-all-of-our-needs/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										Apr 8<span
+																											class="event-time">5.00
+																											pm</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/building-holy-healthy-lives-gods/index.html"
+																												class="post-title">Event:
+																												Building
+																												Holy
+																												&amp;
+																												Healthy
+																												Lives
+																												God’s</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/building-holy-healthy-lives-gods/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										Apr 10<span
+																											class="event-time">6.00
+																											am</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/new-families-during-national-adoption-month/index.html"
+																												class="post-title">New
+																												Families
+																												During
+																												National
+																												Adoption
+																												Month</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/new-families-during-national-adoption-month/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="event-inner">
+																									<div
+																										class="event-date">
+																										May 1<span
+																											class="event-time">11.00
+																											am</span>
+																									</div>
+																									<div
+																										class="entry-title">
+																										<h5
+																											class="post-title-head">
+																											<a href="event/sharing-our-faith-love-to-children/index.html"
+																												class="post-title">Event:
+																												Sharing
+																												Our
+																												Faith
+																												&amp;
+																												Love To
+																												Children</a>
+																										</h5>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more"
+																											href="event/sharing-our-faith-love-to-children/index.html">Event
+																											Details</a>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-element elementor-element-5065efd elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="5065efd" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-da50db9 elementor-column elementor-col-50 elementor-top-column"
+																	data-id="da50db9" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-4f09ad9 elementor-widget elementor-widget-image"
+																				data-id="4f09ad9"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<noscript><img
+																								src="img/about-normal.jpg"
+																								title="about-normal-oh1hcutqgapovd0cfco23v4udo7c2kb9lhphi9eucq"
+																								alt="about-normal-oh1hcutqgapovd0cfco23v4udo7c2kb9lhphi9eucq" /></noscript><img
+																							class="lazyload"
+																							src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+																							data-src="img/about-normal.jpg"
+																							title="about-normal-oh1hcutqgapovd0cfco23v4udo7c2kb9lhphi9eucq"
+																							alt="about-normal-oh1hcutqgapovd0cfco23v4udo7c2kb9lhphi9eucq" />
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-902493c pl-lg-5 elementor-column elementor-col-50 elementor-top-column"
+																	data-id="902493c" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-6a7ee16 elementor-widget elementor-widget-zegensectiontitle"
+																				data-id="6a7ee16"
+																				data-element_type="widget"
+																				data-widget_type="zegensectiontitle.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="section-title-wrapper margin-bottom-20">
+																						<div class="title-wrap"><span
+																								class="sub-title">ABOUT
+																								US</span>
+																							<h2 class="section-title">We
+																								are Taking Small Steps
+																								to Make Earth Better
+																								Planet</h2><span
+																								class="title-separator separator-border theme-color-bg"></span>
+																						</div>
+																						<div
+																							class="section-description">
+																							Lorem ipsum dolor sit amet,
+																							consectetur adipisi cing
+																							elit dolo rem consequ untur
+																							natus laudantium commodie
+																							adipis.</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-2541c99 elementor-widget elementor-widget-heading"
+																				data-id="2541c99"
+																				data-element_type="widget"
+																				data-widget_type="heading.default">
+																				<div class="elementor-widget-container">
+																					<span
+																						class="elementor-heading-title elementor-size-default">The
+																						name of the Lord is a strong
+																						tower; the righteous run into it
+																						and are safe.</span></div>
+																			</div>
+																			<section
+																				class="elementor-element elementor-element-cdce80d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section"
+																				data-id="cdce80d"
+																				data-element_type="section">
+																				<div
+																					class="elementor-container elementor-column-gap-default">
+																					<div class="elementor-row">
+																						<div class="elementor-element elementor-element-3cd7d92 elementor-column elementor-col-50 elementor-inner-column"
+																							data-id="3cd7d92"
+																							data-element_type="column">
+																							<div
+																								class="elementor-column-wrap  elementor-element-populated">
+																								<div
+																									class="elementor-widget-wrap">
+																									<div class="elementor-element elementor-element-3d5c719 elementor-widget elementor-widget-zegenfeaturebox"
+																										data-id="3d5c719"
+																										data-element_type="widget"
+																										data-widget_type="zegenfeaturebox.default">
+																										<div class="elementor-widget-container feature-box-wrapper shortcode-rand-2 zegen-inline-css"
+																											data-css="&quot;.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 25px; }.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 15px; }.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(3), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(3) { margin-bottom: 0px; }&quot;">
+																											<div
+																												class="feature-box-inner">
+																												<div
+																													class="feature-box-icon">
+																													<span
+																														class="text-center theme-color-bg icon-icon-light rounded-circle fbox-icon-middle ti-heart"></span>
+																												</div>
+																												<h5
+																													class="feature-box-title">
+																													Place
+																													Of
+																													Heaven
+																												</h5>
+																												<div
+																													class="fbox-content">
+																													Lorem
+																													ipsum
+																													dolor,
+																													consectetur
+																													elit,
+																													sed
+																													do
+																													tempor
+																													incididunt
+																													labore.
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="elementor-element elementor-element-26d5264 elementor-column elementor-col-50 elementor-inner-column"
+																							data-id="26d5264"
+																							data-element_type="column">
+																							<div
+																								class="elementor-column-wrap  elementor-element-populated">
+																								<div
+																									class="elementor-widget-wrap">
+																									<div class="elementor-element elementor-element-789c66c elementor-widget elementor-widget-zegenfeaturebox"
+																										data-id="789c66c"
+																										data-element_type="widget"
+																										data-widget_type="zegenfeaturebox.default">
+																										<div class="elementor-widget-container feature-box-wrapper shortcode-rand-3 zegen-inline-css"
+																											data-css="&quot;.shortcode-rand-3.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-3.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 25px; }.shortcode-rand-3.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-3.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 15px; }.shortcode-rand-3.feature-box-wrapper .feature-box-inner &gt; *:nth-child(3), .shortcode-rand-3.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(3) { margin-bottom: 0px; }&quot;">
+																											<div
+																												class="feature-box-inner">
+																												<div
+																													class="feature-box-icon">
+																													<span
+																														class="text-center theme-color-bg icon-icon-light rounded-circle fbox-icon-middle ti-book"></span>
+																												</div>
+																												<h5
+																													class="feature-box-title">
+																													Study
+																													Bible
+																												</h5>
+																												<div
+																													class="fbox-content">
+																													Lorem
+																													ipsum
+																													dolor,
+																													consectetur
+																													elit,
+																													sed
+																													do
+																													tempor
+																													incididunt
+																													labore.
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</section>
+																			<div class="elementor-element elementor-element-6086c3c elementor-widget elementor-widget-button"
+																				data-id="6086c3c"
+																				data-element_type="widget"
+																				data-widget_type="button.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-button-wrapper">
+																						<a href="about-us/index.html"
+																							class="elementor-button-link elementor-button elementor-size-md"
+																							role="button"> <span
+																								class="elementor-button-content-wrapper">
+																								<span
+																									class="elementor-button-text">Learn
+																									More</span> </span>
+																						</a></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														data-zegen-parallax-data="{&quot;parallax_ratio&quot;:&quot;1.2&quot;,&quot;parallax_image&quot;:&quot;img/donate-bg-main-1.jpg&quot;}"
+														class="elementor-element elementor-element-0262b08 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="0262b08" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-5350a45 elementor-column elementor-col-100 elementor-top-column"
+																	data-id="5350a45" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-d836137 elementor-widget elementor-widget-zegenpopup-anything"
+																				data-id="d836137"
+																				data-element_type="widget"
+																				data-widget_type="zegenpopup-anything.default">
+																				<div
+																					class="elementor-widget-container popup-anything-wrapper anim text-center">
+																					<a class="popup-video-post popup-trigger-icon icon-theme-color"
+																						href="https://www.youtube.com/watch?v=e1l1-LWTcBs"><span
+																							class="ti-heart"></span></a>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-f29aabc elementor-widget elementor-widget-zegensectiontitle"
+																				data-id="f29aabc"
+																				data-element_type="widget"
+																				data-widget_type="zegensectiontitle.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="section-title-wrapper custom-title-1 mb-3 text-center">
+																						<div class="title-wrap">
+																							<h2 class="section-title">
+																								“Pray! And listen to
+																								God! You can do this
+																								alone, but find somebody
+																								to do it with you”</h2>
+																						</div>
+																						<div
+																							class="section-description">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-053263e text-center elementor-widget elementor-widget-heading"
+																				data-id="053263e"
+																				data-element_type="widget"
+																				data-widget_type="heading.default">
+																				<div class="elementor-widget-container">
+																					<span
+																						class="elementor-heading-title elementor-size-default">Real
+																						Story Cross Journey from Anna
+																						Hampton</span></div>
+																			</div>
+																			<div class="elementor-element elementor-element-9b21ba4 elementor-align-center elementor-widget elementor-widget-button"
+																				data-id="9b21ba4"
+																				data-element_type="widget"
+																				data-widget_type="button.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-button-wrapper">
+																						<a href="donate-now/index.html"
+																							class="elementor-button-link elementor-button elementor-size-md"
+																							role="button"> <span
+																								class="elementor-button-content-wrapper">
+																								<span
+																									class="elementor-button-text">Donate
+																									Online</span>
+																							</span> </a></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-element elementor-element-d8d45c5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="d8d45c5" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-ea4d3dd elementor-column elementor-col-100 elementor-top-column"
+																	data-id="ea4d3dd" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-ccd47e5 elementor-widget elementor-widget-zegensectiontitle"
+																				data-id="ccd47e5"
+																				data-element_type="widget"
+																				data-widget_type="zegensectiontitle.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="section-title-wrapper custom-title-1 margin-bottom-40 text-center">
+																						<div class="title-wrap"><span
+																								class="sub-title">MINISTRIES</span>
+																							<h2 class="section-title">
+																								Our Ministries</h2><span
+																								class="title-separator separator-border theme-color-bg"></span>
+																						</div>
+																						<div
+																							class="section-description">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-b79fe7b elementor-widget elementor-widget-zegenministries"
+																				data-id="b79fe7b"
+																				data-element_type="widget"
+																				data-widget_type="zegenministries.default">
+																				<div class="elementor-widget-container">
+																					<div class="ministries-wrapper ministries-modern ministries-light shortcode-rand-4 zegen-inline-css"
+																						data-css="&quot;.shortcode-rand-4.ministries-wrapper .ministries-inner &gt; *:nth-child(1) { margin-bottom: 30px; }.shortcode-rand-4.ministries-wrapper .ministries-inner &gt; *:nth-child(2) { margin-bottom: 15px; }&quot;">
+																						<div class="owl-carousel"
+																							data-loop="0"
+																							data-margin="30"
+																							data-center="0" data-nav="1"
+																							data-dots="0"
+																							data-autoplay="0"
+																							data-items="3"
+																							data-items-tab="2"
+																							data-items-mob="1"
+																							data-duration="5000"
+																							data-smartspeed="550"
+																							data-scrollby="1"
+																							data-autoheight="false">
+																							<div class="item">
+																								<div
+																									class="ministries-inner">
+																									<div
+																										class="ministries-thumb">
+																										<noscript><img
+																												width="768"
+																												height="512"
+																												src="img/childrens_ministry-1.jpg"
+																												class="img-fluid wp-post-image"
+																												alt="" /></noscript><img
+																											width="768"
+																											height="512"
+																											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20512%22%3E%3C/svg%3E'
+																											data-src="img/childrens_ministry-1.jpg"
+																											class="lazyload img-fluid wp-post-image"
+																											alt="" />
+																									</div>
+																									<h4
+																										class="ministries-title">
+																										<a
+																											href="zegen-ministries/childrens-ministry/index.html">Children’s
+																											Ministry</a>
+																									</h4>
+																									<div
+																										class="ministries-excerpt">
+																										<p>Lorem Ipsum
+																											este pur şi
+																											simplu o
+																											machetă
+																											pentru text
+																											a industriei
+																											tipografice.
+																											Lorem Ipsum
+																											a fost
+																											macheta</p>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more btn btn-link"
+																											href="zegen-ministries/childrens-ministry/index.html">Read
+																											More</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="ministries-inner">
+																									<div
+																										class="ministries-thumb">
+																										<noscript><img
+																												width="768"
+																												height="512"
+																												src="img/women_ministry-1.jpg"
+																												class="img-fluid wp-post-image"
+																												alt="" /></noscript><img
+																											width="768"
+																											height="512"
+																											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20512%22%3E%3C/svg%3E'
+																											data-src="img/women_ministry-1.jpg"
+																											class="lazyload img-fluid wp-post-image"
+																											alt="" />
+																									</div>
+																									<h4
+																										class="ministries-title">
+																										<a
+																											href="zegen-ministries/womens-ministry/index.html">Womens
+																											Ministry</a>
+																									</h4>
+																									<div
+																										class="ministries-excerpt">
+																										<p>Lorem Ipsum
+																											este pur şi
+																											simplu o
+																											machetă
+																											pentru text
+																											a industriei
+																											tipografice.
+																											Lorem Ipsum
+																											a fost
+																											macheta</p>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more btn btn-link"
+																											href="zegen-ministries/womens-ministry/index.html">Read
+																											More</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="ministries-inner">
+																									<div
+																										class="ministries-thumb">
+																										<noscript><img
+																												width="768"
+																												height="512"
+																												src="img/global_ministry-1.jpg"
+																												class="img-fluid wp-post-image"
+																												alt="" /></noscript><img
+																											width="768"
+																											height="512"
+																											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20512%22%3E%3C/svg%3E'
+																											data-src="img/global_ministry-1.jpg"
+																											class="lazyload img-fluid wp-post-image"
+																											alt="" />
+																									</div>
+																									<h4
+																										class="ministries-title">
+																										<a
+																											href="zegen-ministries/global-ministry/index.html">Global
+																											Ministry</a>
+																									</h4>
+																									<div
+																										class="ministries-excerpt">
+																										<p>Lorem Ipsum
+																											este pur şi
+																											simplu o
+																											machetă
+																											pentru text
+																											a industriei
+																											tipografice.
+																											Lorem Ipsum
+																											a fost
+																											macheta</p>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more btn btn-link"
+																											href="zegen-ministries/global-ministry/index.html">Read
+																											More</a>
+																									</div>
+																								</div>
+																							</div>
+																							<div class="item">
+																								<div
+																									class="ministries-inner">
+																									<div
+																										class="ministries-thumb">
+																										<noscript><img
+																												width="768"
+																												height="512"
+																												src="img/music_ministry-1.jpg"
+																												class="img-fluid wp-post-image"
+																												alt="" /></noscript><img
+																											width="768"
+																											height="512"
+																											src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20512%22%3E%3C/svg%3E'
+																											data-src="img/music_ministry-1.jpg"
+																											class="lazyload img-fluid wp-post-image"
+																											alt="" />
+																									</div>
+																									<h4
+																										class="ministries-title">
+																										<a
+																											href="zegen-ministries/music-ministry/index.html">Music
+																											Ministry</a>
+																									</h4>
+																									<div
+																										class="ministries-excerpt">
+																										<p>Lorem Ipsum
+																											este pur şi
+																											simplu o
+																											machetă
+																											pentru text
+																											a industriei
+																											tipografice.
+																											Lorem Ipsum
+																											a fost
+																											macheta</p>
+																									</div>
+																									<div
+																										class="post-more">
+																										<a class="read-more btn btn-link"
+																											href="zegen-ministries/music-ministry/index.html">Read
+																											More</a>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														data-zegen-parallax-data="{&quot;parallax_ratio&quot;:&quot;1.2&quot;,&quot;parallax_image&quot;:&quot;img/contact-bg-1.jpg&quot;}"
+														class="elementor-element elementor-element-317bd89 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="317bd89" data-element_type="section"
+														data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;mountains&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-shape elementor-shape-bottom"
+															data-negative="false"> <svg
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 1000 100" preserveAspectRatio="none">
+																<path class="elementor-shape-fill" opacity="0.33"
+																	d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z" />
+																<path class="elementor-shape-fill" opacity="0.66"
+																	d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z" />
+																<path class="elementor-shape-fill"
+																	d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z" />
+															</svg></div>
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-41833e2 elementor-column elementor-col-50 elementor-top-column"
+																	data-id="41833e2" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-332eff0 verticalMove elementor-widget elementor-widget-zegenflipbox"
+																				data-id="332eff0"
+																				data-element_type="widget"
+																				data-widget_type="zegenflipbox.default">
+																				<div class="elementor-widget-container">
+																					<div class="flip-box-wrapper text-center"
+																						data-css="&quot;&quot;">
+																						<div
+																							class="flip-box-inner imghvr-flip-3d-horz">
+																							<div class="flip-front">
+																								<div
+																									class="flip-box-icon">
+																									<span
+																										class="text-center icon-icon-light rounded-circle flip-icon-middle ti-headphone-alt"></span>
+																								</div>
+																								<h3
+																									class="flip-box-title">
+																									Call Us</h3>
+																								<div
+																									class="flip-content">
+																									<p>684 West College
+																										St. Sun City,
+																										USA.</p>
+																									<p>+8 (123) 985 789
+																									</p>
+																									<p>zegenchurch@mail.com
+																									</p>
+																								</div>
+																							</div>
+																							<div class="flip-back">
+																								<div
+																									class="flip-box-icon">
+																									<span
+																										class="text-center icon-icon-light rounded-circle flip-icon-middle ti-headphone-alt"></span>
+																								</div>
+																								<h3
+																									class="flip-box-title">
+																									Call Us</h3>
+																								<div
+																									class="flip-content">
+																									<p>684 West College
+																										St. Sun City,
+																										USA.</p>
+																									<p>+8 (123) 985 789
+																									</p>
+																									<p>zegenchurch@mail.com
+																									</p>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-76fcbb5 pl-lg-3 elementor-column elementor-col-50 elementor-top-column"
+																	data-id="76fcbb5" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-1d24ac0 elementor-widget elementor-widget-zegensectiontitle"
+																				data-id="1d24ac0"
+																				data-element_type="widget"
+																				data-widget_type="zegensectiontitle.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="section-title-wrapper margin-bottom-20">
+																						<div class="title-wrap"><span
+																								class="sub-title">GET IN
+																								TOUCH</span>
+																							<h2 class="section-title">
+																								Don&#039;t hesitate
+																								Contact Us</h2><span
+																								class="title-separator separator-border theme-color-bg"></span>
+																						</div>
+																						<div
+																							class="section-description">
+																							Lorem ipsum dolor sit amet,
+																							consectetur adipisi cing
+																							elit dolo rem consequ untur
+																							natus laudantium commodie
+																							adipis proin viverra nisi at
+																							nisl imperdiet auctor.</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-1cc293f elementor-widget elementor-widget-button"
+																				data-id="1cc293f"
+																				data-element_type="widget"
+																				data-widget_type="button.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-button-wrapper">
+																						<a href="contact-us/index.html"
+																							class="elementor-button-link elementor-button elementor-size-md"
+																							role="button"> <span
+																								class="elementor-button-content-wrapper">
+																								<span
+																									class="elementor-button-text">Contact
+																									Us</span> </span>
+																						</a></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-element elementor-element-b10bb14 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="b10bb14" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-76ecf18 elementor-column elementor-col-100 elementor-top-column"
+																	data-id="76ecf18" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-8e5ac4a elementor-widget elementor-widget-zegensectiontitle"
+																				data-id="8e5ac4a"
+																				data-element_type="widget"
+																				data-widget_type="zegensectiontitle.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="section-title-wrapper custom-title-1 margin-bottom-0 text-center">
+																						<div class="title-wrap"><span
+																								class="sub-title">OUR
+																								BLOG</span>
+																							<h2 class="section-title">
+																								Latest Posts</h2><span
+																								class="title-separator separator-border theme-color-bg"></span>
+																						</div>
+																						<div
+																							class="section-description">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-element elementor-element-7d2f484 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+														data-id="7d2f484" data-element_type="section"
+														data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+														<div class="elementor-background-overlay"></div>
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-element elementor-element-42d0522 elementor-column elementor-col-100 elementor-top-column"
+																	data-id="42d0522" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap  elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-a89e2a1 pt-lg-3 elementor-widget elementor-widget-zegenblog"
+																				data-id="a89e2a1"
+																				data-element_type="widget"
+																				data-widget_type="zegenblog.default">
+																				<div class="elementor-widget-container blog-wrapper blog-style-classic blog-light blog-slide-model shortcode-rand-6 zegen-inline-css"
+																					data-css="&quot;.shortcode-rand-6.blog-wrapper .blog-inner &gt; *:nth-child(1) { margin-bottom: 0px; }.shortcode-rand-6.blog-wrapper .blog-inner &gt; *:nth-child(2) { margin-bottom: 0px; }.shortcode-rand-6.blog-wrapper .blog-inner &gt; *:nth-child(3) { margin-bottom: 0px; }&quot;">
+																					<div class="owl-carousel"
+																						data-loop="0" data-margin="30"
+																						data-center="0" data-nav="0"
+																						data-dots="1" data-autoplay="0"
+																						data-items="3"
+																						data-items-tab="2"
+																						data-items-mob="1"
+																						data-duration="5000"
+																						data-smartspeed="250"
+																						data-scrollby="1"
+																						data-autoheight="0">
+																						<div class="owl-carousel-item">
+																							<div class="blog-inner">
+																								<div class="post-thumb">
+																									<noscript><img
+																											height="600"
+																											width="768"
+																											class="img-fluid"
+																											alt="Giving Back – Uganda Training Centers"
+																											src="img/church-theme-blog-9-1.jpg" /></noscript><img
+																										height="600"
+																										width="768"
+																										class="lazyload img-fluid"
+																										alt="Giving Back – Uganda Training Centers"
+																										src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20600%22%3E%3C/svg%3E'
+																										data-src="img/church-theme-blog-9-1.jpg" />
+																								</div>
+																								<div
+																									class="top-meta clearfix">
+																									<ul
+																										class="nav top-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-date">
+																												<a
+																													href="2019/10/21/index.html"><i
+																														class="icon icon-calendar"></i>
+																													Oct
+																													21,
+																													2019</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																								<div
+																									class="entry-title">
+																									<h4
+																										class="post-title-head">
+																										<a href="giving-back-uganda-training-centers/index.html"
+																											class="post-title">Giving
+																											Back –
+																											Uganda
+																											Training
+																											Centers</a>
+																									</h4>
+																								</div>
+																								<div
+																									class="bottom-meta clearfix">
+																									<ul
+																										class="nav bottom-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-more">
+																												<a class="read-more"
+																													href="giving-back-uganda-training-centers/index.html">Read
+																													More</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="owl-carousel-item">
+																							<div class="blog-inner">
+																								<div class="post-thumb">
+																									<noscript><img
+																											height="600"
+																											width="768"
+																											class="img-fluid"
+																											alt="Spirit Of The Lord Is, From The New Life"
+																											src="img/church-theme-blog-7-1.jpg" /></noscript><img
+																										height="600"
+																										width="768"
+																										class="lazyload img-fluid"
+																										alt="Spirit Of The Lord Is, From The New Life"
+																										src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20600%22%3E%3C/svg%3E'
+																										data-src="img/church-theme-blog-7-1.jpg" />
+																								</div>
+																								<div
+																									class="top-meta clearfix">
+																									<ul
+																										class="nav top-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-date">
+																												<a
+																													href="2019/10/21/index.html"><i
+																														class="icon icon-calendar"></i>
+																													Oct
+																													21,
+																													2019</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																								<div
+																									class="entry-title">
+																									<h4
+																										class="post-title-head">
+																										<a href="spirit-of-the-lord-is-from-the-new-life/index.html"
+																											class="post-title">Spirit
+																											Of The Lord
+																											Is, From The
+																											New Life</a>
+																									</h4>
+																								</div>
+																								<div
+																									class="bottom-meta clearfix">
+																									<ul
+																										class="nav bottom-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-more">
+																												<a class="read-more"
+																													href="spirit-of-the-lord-is-from-the-new-life/index.html">Read
+																													More</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="owl-carousel-item">
+																							<div class="blog-inner">
+																								<div class="post-thumb">
+																									<noscript><img
+																											height="600"
+																											width="768"
+																											class="img-fluid"
+																											alt="Pray for Help to Save Mattia’s Life"
+																											src="img/church-theme-blog-1-1.jpg" /></noscript><img
+																										height="600"
+																										width="768"
+																										class="lazyload img-fluid"
+																										alt="Pray for Help to Save Mattia’s Life"
+																										src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20600%22%3E%3C/svg%3E'
+																										data-src="img/church-theme-blog-1-1.jpg" />
+																								</div>
+																								<div
+																									class="top-meta clearfix">
+																									<ul
+																										class="nav top-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-date">
+																												<a
+																													href="2019/04/19/index.html"><i
+																														class="icon icon-calendar"></i>
+																													Apr
+																													19,
+																													2019</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																								<div
+																									class="entry-title">
+																									<h4
+																										class="post-title-head">
+																										<a href="pray-for-help-to-save-mattias-life/index.html"
+																											class="post-title">Pray
+																											for Help to
+																											Save
+																											Mattia’s
+																											Life</a>
+																									</h4>
+																								</div>
+																								<div
+																									class="bottom-meta clearfix">
+																									<ul
+																										class="nav bottom-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-more">
+																												<a class="read-more"
+																													href="pray-for-help-to-save-mattias-life/index.html">Read
+																													More</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																						<div class="owl-carousel-item">
+																							<div class="blog-inner">
+																								<div class="post-thumb">
+																									<noscript><img
+																											height="600"
+																											width="768"
+																											class="img-fluid"
+																											alt="Families During National Adoption Month"
+																											src="img/church-theme-blog-8-1.jpg" /></noscript><img
+																										height="600"
+																										width="768"
+																										class="lazyload img-fluid"
+																										alt="Families During National Adoption Month"
+																										src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20600%22%3E%3C/svg%3E'
+																										data-src="img/church-theme-blog-8-1.jpg" />
+																								</div>
+																								<div
+																									class="top-meta clearfix">
+																									<ul
+																										class="nav top-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-date">
+																												<a
+																													href="2019/04/19/index.html"><i
+																														class="icon icon-calendar"></i>
+																													Apr
+																													19,
+																													2019</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																								<div
+																									class="entry-title">
+																									<h4
+																										class="post-title-head">
+																										<a href="families-during-national-adoption-month/index.html"
+																											class="post-title">Families
+																											During
+																											National
+																											Adoption
+																											Month</a>
+																									</h4>
+																								</div>
+																								<div
+																									class="bottom-meta clearfix">
+																									<ul
+																										class="nav bottom-meta-list meta-left">
+																										<li>
+																											<div
+																												class="post-more">
+																												<a class="read-more"
+																													href="families-during-national-adoption-month/index.html">Read
+																													More</a>
+																											</div>
+																										</li>
+																									</ul>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="site-footer footer-template-custom">
+			<div class="footer-middle-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="footer-middle-sidebar">
+								<section id="text-2" class="widget widget_text">
+									<h3 class="widget-title">About Zegen</h3>
+									<div class="textwidget">
+										<p>We are a community of people loving each other and our Lord. Be completely
+											humble and gentle, be patient, bearing with one another in love.We are a
+											community Lord.</p>
+									</div>
+								</section>
+								<section id="zozo_social_widget-1" class="widget zozo_social_widget">
+									<ul
+										class="nav social-icons social-widget widget-content social-squared social-white social-h-white social-bg-own social-hbg-black">
+										<li><a href="https://www.facebook.com/chruch.official/" target="_blank"
+												class="social-fb"><i class="ti-facebook"></i></a></li>
+										<li><a href="https://twitter.com/chruch" target="_blank"
+												class="social-twitter"><i class="ti-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/chruch/" target="_blank"
+												class="social-instagram"><i class="ti-instagram"></i></a></li>
+										<li><a href="https://in.pinterest.com/chruchofficial/" target="_blank"
+												class="social-pinterest"><i class="ti-pinterest"></i></a></li>
+										<li><a href="https://www.youtube.com/channel/UCAOkwuYxJuOqiYAj1Vy5JIg"
+												target="_blank" class="social-youtube"><i class="ti-youtube"></i></a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-middle-sidebar">
+								<section id="nav_menu-1" class="widget widget_nav_menu">
+									<h3 class="widget-title">Quick Links</h3>
+									<div class="menu-quick-links-container">
+										<ul id="menu-quick-links" class="menu">
+											<li id="menu-item-6247"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6247">
+												<a href="#">Who We Are?</a></li>
+											<li id="menu-item-6248"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6248">
+												<a href="#">Support and FAQ&#8217;s</a></li>
+											<li id="menu-item-6249"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6249">
+												<a href="#">Payments</a></li>
+											<li id="menu-item-6250"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+												<a href="#">Donations Terms</a></li>
+											<li id="menu-item-6251"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6251">
+												<a href="#">Volunteer</a></li>
+										</ul>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-middle-sidebar">
+								<section id="zegen_latest_post_widget-1" class="widget zegen_latest_post_widget">
+									<h3 class="widget-title">Latest News</h3>
+									<div class="widg-content">
+										<ul class="side-newsfeed">
+											<li>
+												<div class="side-item">
+													<div class="side-image"> <a
+															href="giving-back-uganda-training-centers/index.html"
+															rel="bookmark"><noscript><img width="80" height="80"
+																	src="img/church-theme-blog-9-1.jpg"
+																	class="img-responsive wp-post-image"
+																	alt="" /></noscript><img width="80" height="80"
+																src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+																data-src="img/church-theme-blog-9-1.jpg"
+																class="lazyload img-responsive wp-post-image"
+																alt="" /></a></div>
+													<div class="side-item-text"> <a class="themeh-color"
+															href="giving-back-uganda-training-centers/index.html"
+															rel="bookmark">Giving Back – Uganda Training Centers</a>
+														<div class="comments-wrap">
+															<div class="meta-left"> <span class="">Oct 21, 2019</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="side-item">
+													<div class="side-image"> <a
+															href="spirit-of-the-lord-is-from-the-new-life/index.html"
+															rel="bookmark"><noscript><img width="80" height="80"
+																	src="img/church-theme-blog-7-1.jpg"
+																	class="img-responsive wp-post-image"
+																	alt="" /></noscript><img width="80" height="80"
+																src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+																data-src="img/church-theme-blog-7-1.jpg"
+																class="lazyload img-responsive wp-post-image"
+																alt="" /></a></div>
+													<div class="side-item-text"> <a class="themeh-color"
+															href="spirit-of-the-lord-is-from-the-new-life/index.html"
+															rel="bookmark">Spirit Of The Lord Is, From The New Life</a>
+														<div class="comments-wrap">
+															<div class="meta-left"> <span class="">Oct 21, 2019</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-middle-sidebar">
+								<section id="zegen_mailchimp_widget-1" class="widget zegen_mailchimp_widget">
+									<h3 class="widget-title">Newsletter</h3>
+									<div class="mailchimp-wrapper">
+										<form class="zozo-mc-form" id="zozo-mc-form" method="post">
+											<p class="zozo-mc-subtitle">Lorem ipsum is placeholder text commonly used in
+												the graphic, print, and publishing industries for previewing layouts and
+												visual mockups.</p> <input type="hidden" name="zegen_mc_listid"
+												value="faba7d110e" />
+											<div class="input-group"> <input type="text"
+													class="form-control zozo-mc-email" id="zozo-mc-email"
+													placeholder="Email Address" name="zozo_mc_email"> <input
+													class="input-group-addon zozo-mc btn btn-default" type="button"
+													name="Sign Up" value="Sign Up" /></div>
+										</form>
+										<div class="mc-notice-group" data-success="Success." data-fail="Failure."> <span
+												class="mc-notice-msg"></span></div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-inner container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="footer-bottom-items nav pull-left">
+								<li class="nav-item">
+									<div class="nav-item-inner">
+										<div class="copyright-text-wrap">© 2020 Theme by <a
+												href="https://SJRInfotech.com/" target="_blank">SJRInfotech</a></div>
+									</div>
+								</li>
+							</ul>
+							<ul class="footer-bottom-items nav pull-center">
+								<li class="nav-item">
+									<div class="nav-item-inner"></div>
+								</li>
+							</ul>
+							<ul class="footer-bottom-items nav pull-right">
+								<li class="nav-item">
+									<div class="nav-item-inner">
+										<div class="menu-footer-bottom-menu-container">
+											<ul id="menu-footer-bottom-menu" class="footer-menu">
+												<li id="menu-item-6124"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6124">
+													<a href="#">Privacy</a></li>
+												<li id="menu-item-6245"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6245">
+													<a href="#">Sermons</a></li>
+												<li id="menu-item-6246"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6246">
+													<a href="#">Contact Us</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> <a href="#" class="back-to-top position-right" id="back-to-top"><i class="ti-angle-up"></i></a>
+		</footer>
+	</div>
+
+	<script>
+		/* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+		if (typeof WebFontConfig === "undefined") {
+			WebFontConfig = new Object();
+		}
+		WebFontConfig['google'] = {
+			families: ['Open+Sans:400', 'Poppins:700,400,600,500', 'Dancing+Script:700&amp;subset=latin,']
+		};
+
+		(function () {
+			var wf = document.createElement('script');
+			wf.src = 'js/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	<noscript>
+		<style>
+			.lazyload {
+				display: none;
+			}
+		</style>
+	</noscript>
+	<script data-noptimize="1">
+		window.lazySizesConfig = window.lazySizesConfig || {};
+		window.lazySizesConfig.loadMode = 1;
+	</script>
+	<script async data-noptimize="1" src='js/lazysizes.minbf41.js?ao_version=2.7.3'></script>
+
+
+	<script type='text/javascript'>
+		var elementorFrontendConfig = {
+			"environmentMode": {
+				"edit": false,
+				"wpPreview": false
+			},
+			"i18n": {
+				"shareOnFacebook": "Share on Facebook",
+				"shareOnTwitter": "Share on Twitter",
+				"pinIt": "Pin it",
+				"downloadImage": "Download image"
+			},
+			"is_rtl": false,
+			"breakpoints": {
+				"xs": 0,
+				"sm": 480,
+				"md": 768,
+				"lg": 1025,
+				"xl": 1440,
+				"xxl": 1600
+			},
+			"version": "2.9.13",
+
+			"settings": {
+				"page": [],
+				"general": {
+					"elementor_global_image_lightbox": "yes",
+					"elementor_lightbox_enable_counter": "yes",
+					"elementor_lightbox_enable_fullscreen": "yes",
+					"elementor_lightbox_enable_zoom": "yes",
+					"elementor_lightbox_enable_share": "yes",
+					"elementor_lightbox_title_src": "title",
+					"elementor_lightbox_description_src": "description"
+				},
+				"editorPreferences": []
+			},
+			"post": {
+				"id": 21,
+				"title": "Zegen%20%E2%80%93%20Church%20WordPress%20Theme",
+				"excerpt": "",
+				"featuredImage": false
+			}
+		};
+	</script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

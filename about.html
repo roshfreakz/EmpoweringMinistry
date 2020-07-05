@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Us &#8211; Zegen</title>
+    <link rel='stylesheet' id='google-fonts-1-css'
+        href='https://fonts.googleapis.com/css?family=Damion%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.2'
+        type='text/css' media='all' />
+    <link href="css/style1.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <script type='text/javascript' src='js/jquery4a5f.js?ver=1.12.4-wp'></script>
+    <link rel="icon" href="img/cropped-fav-icon.jpg" sizes="32x32" />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl)
+                        if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl)
+                        if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl)
+                        if (sl > nl[i] && nl[i] > 0) {
+                            sl = nl[i];
+                            ix = i;
+                        }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document
+                    .createElement("style"));
+                document.getElementById(e.c).height = newh + "px";
+                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };
+    </script>
+</head>
+
+<body
+    class="page-template-default page page-id-5544 wp-embed-responsive theme-zegen woocommerce-no-js elementor-default elementor-kit-17005 elementor-page elementor-page-5544"
+    data-zegen="{&quot;scroll_time&quot;:&quot;600&quot;,&quot;scroll_dist&quot;:&quot;40&quot;,&quot;res_width&quot;:1025,&quot;menu_offset&quot;:60,&quot;mobile_menu_offset&quot;:60}">
+    <div class="page-loader"></div>
+    <div class="mobile-header">
+        <div class="mobile-header-inner">
+            <div class="sticky-outer">
+                <div class="sticky-head">
+                    <div class="container">
+                        <ul class="mobile-header-items nav pull-left">
+                            <li class="nav-item">
+                                <div class="nav-item-inner"> <a class="mobile-bar-toggle" href="#"><i
+                                            class="ti-menu"></i></a></div>
+                            </li>
+                        </ul>
+                        <ul class="mobile-header-items nav pull-center">
+                            <li class="nav-item">
+                                <div class="nav-item-inner">
+                                    <div class="mobile-logo"><a href="../index.html" title="Zegen"><noscript><img
+                                                    class="img-responsive" src="img/mobile-logo-dark.png" alt="Zegen"
+                                                    title="Zegen" /></noscript><img class="lazyload img-responsive"
+                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+                                                data-src="img/mobile-logo-dark.png" alt="Zegen" title="Zegen" /></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="mobile-header-items nav pull-right">
+                            <li class="nav-item">
+                                <div class="nav-item-inner"> <a class="full-search-toggle" href="#"><i
+                                            class="ti-search"></i></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-bar animate-from-left"> <a class="mobile-bar-toggle close" href="#"></a>
+        <div class="mobile-bar-inner">
+            <div class="container">
+                <ul class="mobile-bar-items nav flex-column mobile-bar-top">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <div class="mobile-logo"><a href="../index.html" title="Zegen"><noscript><img
+                                            class="img-responsive" src="img/mobile-logo-dark.png" alt="Zegen"
+                                            title="Zegen" /></noscript><img class="lazyload img-responsive"
+                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+                                        data-src="img/mobile-logo-dark.png" alt="Zegen" title="Zegen" /></a></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mobile-bar-items nav flex-column mobile-bar-middle">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <div class="zegen-mobile-main-menu"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mobile-bar-items nav flex-column mobile-bar-bottom">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <form method="get" class="search-form" action="https://elementor.zozothemes.com/zegen/">
+                                <div class="input-group"> <input type="text" class="form-control" name="s" value=""
+                                        placeholder="Search for..."> <span class="input-group-btn"> <button
+                                            class="btn btn-secondary" type="submit"><i
+                                                class="ti-arrow-right"></i></button> </span></div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="page" class="zegen-wrapper">
+        <header class="zegen-header">
+            <div class="header-inner">
+                <div class="sticky-outer">
+                    <div class="sticky-head">
+                        <nav class="navbar clearfix">
+                            <div class="custom-container navbar-inner">
+                                <ul class="navbar-items nav pull-left">
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+											<div class="main-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+											<div class="sticky-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+										</div>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-items nav pull-right">
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+                                            <ul id="zegen-main-menu" class="nav zegen-main-menu">
+                                                <li class="menu-item nav-item">
+                                                    <a href="index.html" class="nav-link">Home</a>
+                                                </li>
+                                                <li class="menu-item nav-item">
+                                                    <a href="about.html" class="nav-link">About Us</a>
+                                                </li>
+                                                <li class="menu-item  nav-item ">
+                                                    <a href="gallery.html" class="nav-link">Gallery</a>
+                                                </li>
+                                                <li class="menu-item  nav-item ">
+                                                    <a href="live.html" class="nav-link">Live</a>
+                                                </li>
+                                                <li class="menu-item nav-item ">
+                                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+                                            <div class="header-navbar-text-1">
+                                                <a href="../donate-now/index.html" class="h-donate-btn">Donate</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="zegen-content-wrapper">
+            <div class="zegen-content zegen-page">
+                <header id="page-title" class="page-title-wrap">
+                    <div class="page-title-wrap-inner parallax-item" data-stellar-background-ratio="0.5"
+                        data-property="no-video"> <span class="page-title-overlay"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="page-title-inner">
+                                        <div class="pull-center">
+                                            <div id="breadcrumb" class="breadcrumb"><a href="../index.html">Home</a>
+                                                <span class="current">About Us</span></div>
+                                            <h1 class="page-title">About Us</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="zegen-content-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="primary" class="content-area clearfix">
+                                    <div id="page-5544" class="post-5544 page type-page status-publish hentry">
+                                        <div data-elementor-type="wp-page" data-elementor-id="5544"
+                                            class="elementor elementor-5544" data-elementor-settings="[]">
+                                            <div class="elementor-inner">
+                                                <div class="elementor-section-wrap">
+                                                    <section
+                                                        class="elementor-element elementor-element-5065efd elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                                                        data-id="5065efd" data-element_type="section"
+                                                        data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-198b15f elementor-column elementor-col-50 elementor-top-column"
+                                                                    data-id="198b15f" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-491d8b2 elementor-widget elementor-widget-image"
+                                                                                data-id="491d8b2"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="image.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div class="elementor-image">
+                                                                                        <noscript><img width="439"
+                                                                                                height="625"
+                                                                                                src="img/about-us-img-1-1.png"
+                                                                                                class="attachment-large size-large"
+                                                                                                alt="" /></noscript><img
+                                                                                            width="439" height="625"
+                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20439%20625%22%3E%3C/svg%3E'
+                                                                                            data-src="img/about-us-img-1-1.png"
+                                                                                            class="lazyload attachment-large size-large"
+                                                                                            alt="" /></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-902493c pl-lg-5 elementor-column elementor-col-50 elementor-top-column"
+                                                                    data-id="902493c" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-bc4aad8 elementor-widget elementor-widget-zegensectiontitle"
+                                                                                data-id="bc4aad8"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegensectiontitle.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div
+                                                                                        class="section-title-wrapper margin-bottom-20">
+                                                                                        <div class="title-wrap"><span
+                                                                                                class="sub-title">ABOUT
+                                                                                                US</span>
+                                                                                            <h2 class="section-title">We
+                                                                                                are Taking Small Steps
+                                                                                                to Make Earth Better
+                                                                                                Planet</h2><span
+                                                                                                class="title-separator separator-border theme-color-bg"></span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="section-description">
+                                                                                            Lorem ipsum dolor sit amet,
+                                                                                            consectetur adipisi cing
+                                                                                            elit dolo rem consequ untur
+                                                                                            natus laudantium commodie
+                                                                                            adipis.</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <section
+                                                                                class="elementor-element elementor-element-cdce80d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section"
+                                                                                data-id="cdce80d"
+                                                                                data-element_type="section">
+                                                                                <div
+                                                                                    class="elementor-container elementor-column-gap-default">
+                                                                                    <div class="elementor-row">
+                                                                                        <div class="elementor-element elementor-element-3cd7d92 elementor-column elementor-col-50 elementor-inner-column"
+                                                                                            data-id="3cd7d92"
+                                                                                            data-element_type="column">
+                                                                                            <div
+                                                                                                class="elementor-column-wrap  elementor-element-populated">
+                                                                                                <div
+                                                                                                    class="elementor-widget-wrap">
+                                                                                                    <div class="elementor-element elementor-element-3d5c719 elementor-widget elementor-widget-zegenfeaturebox"
+                                                                                                        data-id="3d5c719"
+                                                                                                        data-element_type="widget"
+                                                                                                        data-widget_type="zegenfeaturebox.default">
+                                                                                                        <div class="elementor-widget-container feature-box-wrapper shortcode-rand-1 zegen-inline-css"
+                                                                                                            data-css="&quot;.shortcode-rand-1.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-1.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 25px; }.shortcode-rand-1.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-1.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 15px; }.shortcode-rand-1.feature-box-wrapper .feature-box-inner &gt; *:nth-child(3), .shortcode-rand-1.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(3) { margin-bottom: 0px; }&quot;">
+                                                                                                            <div
+                                                                                                                class="feature-box-inner">
+                                                                                                                <div
+                                                                                                                    class="feature-box-icon">
+                                                                                                                    <span
+                                                                                                                        class="text-center theme-color-bg icon-icon-light rounded-circle fbox-icon-middle ti-heart"></span>
+                                                                                                                </div>
+                                                                                                                <h5
+                                                                                                                    class="feature-box-title">
+                                                                                                                    Place
+                                                                                                                    Of
+                                                                                                                    Heaven
+                                                                                                                </h5>
+                                                                                                                <div
+                                                                                                                    class="fbox-content">
+                                                                                                                    Lorem
+                                                                                                                    ipsum
+                                                                                                                    dolor,
+                                                                                                                    consectetur
+                                                                                                                    adipiscing
+                                                                                                                    elit,
+                                                                                                                    sed
+                                                                                                                    do
+                                                                                                                    tempor
+                                                                                                                    incididunt
+                                                                                                                    labore.
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="elementor-element elementor-element-26d5264 elementor-column elementor-col-50 elementor-inner-column"
+                                                                                            data-id="26d5264"
+                                                                                            data-element_type="column">
+                                                                                            <div
+                                                                                                class="elementor-column-wrap  elementor-element-populated">
+                                                                                                <div
+                                                                                                    class="elementor-widget-wrap">
+                                                                                                    <div class="elementor-element elementor-element-789c66c elementor-widget elementor-widget-zegenfeaturebox"
+                                                                                                        data-id="789c66c"
+                                                                                                        data-element_type="widget"
+                                                                                                        data-widget_type="zegenfeaturebox.default">
+                                                                                                        <div class="elementor-widget-container feature-box-wrapper shortcode-rand-2 zegen-inline-css"
+                                                                                                            data-css="&quot;.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 25px; }.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 15px; }.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(3), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(3) { margin-bottom: 0px; }&quot;">
+                                                                                                            <div
+                                                                                                                class="feature-box-inner">
+                                                                                                                <div
+                                                                                                                    class="feature-box-icon">
+                                                                                                                    <span
+                                                                                                                        class="text-center theme-color-bg icon-icon-light rounded-circle fbox-icon-middle ti-book"></span>
+                                                                                                                </div>
+                                                                                                                <h5
+                                                                                                                    class="feature-box-title">
+                                                                                                                    Study
+                                                                                                                    Bible
+                                                                                                                </h5>
+                                                                                                                <div
+                                                                                                                    class="fbox-content">
+                                                                                                                    Lorem
+                                                                                                                    ipsum
+                                                                                                                    dolor,
+                                                                                                                    consectetur
+                                                                                                                    adipiscing
+                                                                                                                    elit,
+                                                                                                                    sed
+                                                                                                                    do
+                                                                                                                    tempor
+                                                                                                                    incididunt
+                                                                                                                    labore.
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                        data-zegen-parallax-data="{&quot;parallax_ratio&quot;:&quot;2&quot;,&quot;parallax_image&quot;:&quot;img/events_imgs3-1.jpg&quot;}"
+                                                        class="elementor-element elementor-element-316a277 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section"
+                                                        data-id="316a277" data-element_type="section"
+                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                        <div class="elementor-background-overlay"></div>
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-4eac197 elementor-column elementor-col-50 elementor-inner-column"
+                                                                    data-id="4eac197" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-f25dbb1 elementor-widget elementor-widget-zegenpopup-anything"
+                                                                                data-id="f25dbb1"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegenpopup-anything.default">
+                                                                                <div
+                                                                                    class="elementor-widget-container popup-anything-wrapper anim text-center">
+                                                                                    <a class="popup-video-post popup-trigger-icon icon-icon-light"
+                                                                                        href="https://www.youtube.com/watch?v=e1l1-LWTcBs"><span
+                                                                                            class="ti-control-play"></span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-77ffb79 elementor-column elementor-col-50 elementor-inner-column"
+                                                                    data-id="77ffb79" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-4d19599 elementor-widget elementor-widget-zegensectiontitle"
+                                                                                data-id="4d19599"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegensectiontitle.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div
+                                                                                        class="section-title-wrapper custom-title-1 mb-0">
+                                                                                        <div class="title-wrap">
+                                                                                            <h2 class="section-title">
+                                                                                                “Pray! And listen to
+                                                                                                God! You can do this
+                                                                                                alone, but find somebody
+                                                                                                to do it with you”</h2>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="section-description">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                        class="elementor-element elementor-element-ef3159d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                                                        data-id="ef3159d" data-element_type="section"
+                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                        <div class="elementor-background-overlay"></div>
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-e38f13c elementor-column elementor-col-100 elementor-top-column"
+                                                                    data-id="e38f13c" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-8be27ff elementor-widget elementor-widget-zegensectiontitle"
+                                                                                data-id="8be27ff"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegensectiontitle.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div
+                                                                                        class="section-title-wrapper custom-title-1 margin-bottom-40 text-center">
+                                                                                        <div class="title-wrap"><span
+                                                                                                class="sub-title">OUR
+                                                                                                TEAM</span>
+                                                                                            <h2 class="section-title">
+                                                                                                Church Pastors</h2><span
+                                                                                                class="title-separator separator-border theme-color-bg"></span>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="section-description">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="elementor-element elementor-element-604608d elementor-widget elementor-widget-zegenteam"
+                                                                                data-id="604608d"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegenteam.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div class="team-wrapper team-default text-center team-dark"
+                                                                                        data-css="&quot;&quot;">
+                                                                                        <div class="owl-carousel"
+                                                                                            data-loop="1"
+                                                                                            data-margin="30"
+                                                                                            data-center="0" data-nav="0"
+                                                                                            data-dots="1"
+                                                                                            data-autoplay="0"
+                                                                                            data-items="3"
+                                                                                            data-items-tab="2"
+                                                                                            data-items-mob="1"
+                                                                                            data-duration="5000"
+                                                                                            data-smartspeed="250"
+                                                                                            data-scrollby="1"
+                                                                                            data-autoheight="false">
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-6-1.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-6-1.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Olivia</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Executive Postor
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-2-1.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-2-1.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Henna</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Lead Pastor
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-1-1.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-1-1.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Peterson</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Pastor</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-4-1.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-4-1.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Jackson</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Protestant
+                                                                                                        Clergy</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-3-1-1.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-3-1-1.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Johnny</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Christian
+                                                                                                        Speaker</div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="item">
+                                                                                                <div
+                                                                                                    class="team-inner team-overlay-actived">
+                                                                                                    <div
+                                                                                                        class="team-thumb">
+                                                                                                        <span
+                                                                                                            class="overlay-bg overlay-custom"></span>
+                                                                                                        <div
+                                                                                                            class="team-overlay overlay-top-left">
+                                                                                                            <div
+                                                                                                                class="team-social-wrap clearfix">
+                                                                                                                <ul
+                                                                                                                    class="nav social-icons team-social">
+                                                                                                                    <li><a class="social-fb"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-facebook"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-twitter"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-twitter"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-instagram"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-instagram"></i></a>
+                                                                                                                    </li>
+                                                                                                                    <li><a class="social-linkedin"
+                                                                                                                            href="http://zozothemes.com/"
+                                                                                                                            target="_blank"><i
+                                                                                                                                class="ti-linkedin"></i></a>
+                                                                                                                    </li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <noscript><img
+                                                                                                                width="600"
+                                                                                                                height="600"
+                                                                                                                src="img/team-7.jpg"
+                                                                                                                class="img-fluid wp-post-image"
+                                                                                                                alt="" /></noscript><img
+                                                                                                            width="600"
+                                                                                                            height="600"
+                                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20600%20600%22%3E%3C/svg%3E'
+                                                                                                            data-src="img/team-7.jpg"
+                                                                                                            class="lazyload img-fluid wp-post-image"
+                                                                                                            alt="" />
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-name">
+                                                                                                        <h3><span
+                                                                                                                class="client-name">Sophia
+                                                                                                                Jones</span>
+                                                                                                        </h3>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="team-designation">
+                                                                                                        Senior Postor
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer footer-template-custom">
+            <div class="footer-middle-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="text-2" class="widget widget_text">
+                                    <h3 class="widget-title">About Zegen</h3>
+                                    <div class="textwidget">
+                                        <p>We are a community of people loving each other and our Lord. Be completely
+                                            humble and gentle, be patient, bearing with one another in love.We are a
+                                            community Lord.</p>
+                                    </div>
+                                </section>
+                                <section id="zozo_social_widget-1" class="widget zozo_social_widget">
+                                    <ul
+                                        class="nav social-icons social-widget widget-content social-squared social-white social-h-white social-bg-own social-hbg-black">
+                                        <li><a href="https://www.facebook.com/zozothemes.official/" target="_blank"
+                                                class="social-fb"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/zozothemes" target="_blank"
+                                                class="social-twitter"><i class="ti-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/zozotheme/" target="_blank"
+                                                class="social-instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/zozothemesofficial/" target="_blank"
+                                                class="social-pinterest"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCAOkwuYxJuOqiYAj1Vy5JIg"
+                                                target="_blank" class="social-youtube"><i class="ti-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="nav_menu-1" class="widget widget_nav_menu">
+                                    <h3 class="widget-title">Quick Links</h3>
+                                    <div class="menu-quick-links-container">
+                                        <ul id="menu-quick-links" class="menu">
+                                            <li id="menu-item-6247"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6247">
+                                                <a href="#">Who We Are?</a></li>
+                                            <li id="menu-item-6248"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6248">
+                                                <a href="#">Support and FAQ&#8217;s</a></li>
+                                            <li id="menu-item-6249"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6249">
+                                                <a href="#">Payments</a></li>
+                                            <li id="menu-item-6250"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+                                                <a href="#">Donations Terms</a></li>
+                                            <li id="menu-item-6251"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6251">
+                                                <a href="#">Volunteer</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="zegen_latest_post_widget-1" class="widget zegen_latest_post_widget">
+                                    <h3 class="widget-title">Latest News</h3>
+                                    <div class="widg-content">
+                                        <ul class="side-newsfeed">
+                                            <li>
+                                                <div class="side-item">
+                                                    <div class="side-image"> <a
+                                                            href="../giving-back-uganda-training-centers/index.html"
+                                                            rel="bookmark"><noscript><img width="80" height="80"
+                                                                    src="img/church-theme-blog-9-1.jpg"
+                                                                    class="img-responsive wp-post-image"
+                                                                    alt="" /></noscript><img width="80" height="80"
+                                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+                                                                data-src="img/church-theme-blog-9-1.jpg"
+                                                                class="lazyload img-responsive wp-post-image"
+                                                                alt="" /></a></div>
+                                                    <div class="side-item-text"> <a class="themeh-color"
+                                                            href="../giving-back-uganda-training-centers/index.html"
+                                                            rel="bookmark">Giving Back – Uganda Training Centers</a>
+                                                        <div class="comments-wrap">
+                                                            <div class="meta-left"> <span class="">Oct 21, 2019</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="side-item">
+                                                    <div class="side-image"> <a
+                                                            href="../spirit-of-the-lord-is-from-the-new-life/index.html"
+                                                            rel="bookmark"><noscript><img width="80" height="80"
+                                                                    src="img/church-theme-blog-7-1.jpg"
+                                                                    class="img-responsive wp-post-image"
+                                                                    alt="" /></noscript><img width="80" height="80"
+                                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+                                                                data-src="img/church-theme-blog-7-1.jpg"
+                                                                class="lazyload img-responsive wp-post-image"
+                                                                alt="" /></a></div>
+                                                    <div class="side-item-text"> <a class="themeh-color"
+                                                            href="../spirit-of-the-lord-is-from-the-new-life/index.html"
+                                                            rel="bookmark">Spirit Of The Lord Is, From The New Life</a>
+                                                        <div class="comments-wrap">
+                                                            <div class="meta-left"> <span class="">Oct 21, 2019</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="zegen_mailchimp_widget-1" class="widget zegen_mailchimp_widget">
+                                    <h3 class="widget-title">Newsletter</h3>
+                                    <div class="mailchimp-wrapper">
+                                        <form class="zozo-mc-form" id="zozo-mc-form" method="post">
+                                            <p class="zozo-mc-subtitle">Lorem ipsum is placeholder text commonly used in
+                                                the graphic, print, and publishing industries for previewing layouts and
+                                                visual mockups.</p> <input type="hidden" name="zegen_mc_listid"
+                                                value="faba7d110e" />
+                                            <div class="input-group"> <input type="text"
+                                                    class="form-control zozo-mc-email" id="zozo-mc-email"
+                                                    placeholder="Email Address" name="zozo_mc_email"> <input
+                                                    class="input-group-addon zozo-mc btn btn-default" type="button"
+                                                    name="Sign Up" value="Sign Up" /></div>
+                                        </form>
+                                        <div class="mc-notice-group" data-success="Success." data-fail="Failure."> <span
+                                                class="mc-notice-msg"></span></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-bottom-items nav pull-left">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                        <div class="copyright-text-wrap">© 2020 Theme by <a
+                                                href="https://zozothemes.com/" target="_blank">Zozothemes</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="footer-bottom-items nav pull-center">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner"></div>
+                                </li>
+                            </ul>
+                            <ul class="footer-bottom-items nav pull-right">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                        <div class="menu-footer-bottom-menu-container">
+                                            <ul id="menu-footer-bottom-menu" class="footer-menu">
+                                                <li id="menu-item-6124"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6124">
+                                                    <a href="#">Privacy</a></li>
+                                                <li id="menu-item-6245"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6245">
+                                                    <a href="#">Sermons</a></li>
+                                                <li id="menu-item-6246"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6246">
+                                                    <a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <a href="#" class="back-to-top position-right" id="back-to-top"><i class="ti-angle-up"></i></a>
+        </footer>
+    </div>
+
+    <script>
+        /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+        if (typeof WebFontConfig === "undefined") {
+            WebFontConfig = new Object();
+        }
+        WebFontConfig['google'] = {
+            families: ['Open+Sans:400', 'Poppins:700,400,600,500', 'Dancing+Script:700&amp;subset=latin,']
+        };
+
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'js/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script> <noscript>
+        <style>
+            .lazyload {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <script data-noptimize="1">
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+    </script>
+    <script src='js/lazysizes.minbf41.js?ao_version=2.7.3'></script>
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+
+    <script type='text/javascript'>
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "downloadImage": "Download image"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "version": "2.9.13",
+            "urls": {
+                "assets": "https:\/\/elementor.zozothemes.com\/zegen\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "settings": {
+                "page": [],
+                "general": {
+                    "elementor_global_image_lightbox": "yes",
+                    "elementor_lightbox_enable_counter": "yes",
+                    "elementor_lightbox_enable_fullscreen": "yes",
+                    "elementor_lightbox_enable_zoom": "yes",
+                    "elementor_lightbox_enable_share": "yes",
+                    "elementor_lightbox_title_src": "title",
+                    "elementor_lightbox_description_src": "description"
+                },
+                "editorPreferences": []
+            },
+            "post": {
+                "id": 5544,
+                "title": "About%20Us%20%E2%80%93%20Zegen",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+    </script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>

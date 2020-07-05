@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About Us &#8211; Zegen</title>
+    <link rel='stylesheet' id='google-fonts-1-css'
+        href='https://fonts.googleapis.com/css?family=Damion%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.4.2'
+        type='text/css' media='all' />
+    <link href="css/style1.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <script type='text/javascript' src='js/jquery4a5f.js?ver=1.12.4-wp'></script>
+    <link rel="icon" href="img/cropped-fav-icon.jpg" sizes="32x32" />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl)
+                        if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl)
+                        if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl)
+                        if (sl > nl[i] && nl[i] > 0) {
+                            sl = nl[i];
+                            ix = i;
+                        }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document
+                    .createElement("style"));
+                document.getElementById(e.c).height = newh + "px";
+                window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };
+    </script>
+</head>
+
+<body
+    class="page-template-default page page-id-5662 wp-embed-responsive theme-zegen woocommerce-no-js elementor-default elementor-kit-17005 elementor-page elementor-page-5662"
+    data-zegen="{&quot;scroll_time&quot;:&quot;600&quot;,&quot;scroll_dist&quot;:&quot;40&quot;,&quot;res_width&quot;:1025,&quot;menu_offset&quot;:60,&quot;mobile_menu_offset&quot;:60}">
+    <div class="page-loader"></div>
+    <div class="mobile-header">
+        <div class="mobile-header-inner">
+            <div class="sticky-outer">
+                <div class="sticky-head">
+                    <div class="container">
+                        <ul class="mobile-header-items nav pull-left">
+                            <li class="nav-item">
+                                <div class="nav-item-inner"> <a class="mobile-bar-toggle" href="#"><i
+                                            class="ti-menu"></i></a></div>
+                            </li>
+                        </ul>
+                        <ul class="mobile-header-items nav pull-center">
+                            <li class="nav-item">
+                                <div class="nav-item-inner">
+                                    <div class="mobile-logo"><a href="../index.html" title="Zegen"><noscript><img
+                                                    class="img-responsive"
+                                                    src="../wp-content/uploads/sites/2/2019/11/mobile-logo-dark.png"
+                                                    alt="Zegen" title="Zegen" /></noscript><img
+                                                class="lazyload img-responsive"
+                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+                                                data-src="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/mobile-logo-dark.png"
+                                                alt="Zegen" title="Zegen" /></a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="mobile-header-items nav pull-right">
+                            <li class="nav-item">
+                                <div class="nav-item-inner"> <a class="full-search-toggle" href="#"><i
+                                            class="ti-search"></i></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-bar animate-from-left"> <a class="mobile-bar-toggle close" href="#"></a>
+        <div class="mobile-bar-inner">
+            <div class="container">
+                <ul class="mobile-bar-items nav flex-column mobile-bar-top">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <div class="mobile-logo"><a href="../index.html" title="Zegen"><noscript><img
+                                            class="img-responsive"
+                                            src="../wp-content/uploads/sites/2/2019/11/mobile-logo-dark.png" alt="Zegen"
+                                            title="Zegen" /></noscript><img class="lazyload img-responsive"
+                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
+                                        data-src="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/mobile-logo-dark.png"
+                                        alt="Zegen" title="Zegen" /></a></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mobile-bar-items nav flex-column mobile-bar-middle">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <div class="zegen-mobile-main-menu"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="mobile-bar-items nav flex-column mobile-bar-bottom">
+                    <li class="nav-item">
+                        <div class="nav-item-inner">
+                            <form method="get" class="search-form" action="https://elementor.zozothemes.com/zegen/">
+                                <div class="input-group"> <input type="text" class="form-control" name="s" value=""
+                                        placeholder="Search for..."> <span class="input-group-btn"> <button
+                                            class="btn btn-secondary" type="submit"><i
+                                                class="ti-arrow-right"></i></button> </span></div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="page" class="zegen-wrapper">
+        <header class="zegen-header">
+            <div class="header-inner">
+                <div class="sticky-outer">
+                    <div class="sticky-head">
+                        <nav class="navbar clearfix">
+                            <div class="custom-container navbar-inner">
+                                <ul class="navbar-items nav pull-left">
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+											<div class="main-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+											<div class="sticky-logo">
+												<a href="index.html" title="EM">
+													<img class="img-responsive" src="img/logo.png"
+														alt="EM" title="EM" />
+													<h4> Empowering <br> <span class="text-theme"> Ministries </span> </h4>
+												</a>
+											</div>
+										</div>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-items nav pull-right">
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+                                            <ul id="zegen-main-menu" class="nav zegen-main-menu">
+                                                <li class="menu-item nav-item">
+                                                    <a href="index.html" class="nav-link">Home</a>
+                                                </li>
+                                                <li class="menu-item nav-item">
+                                                    <a href="about.html" class="nav-link">About Us</a>
+                                                </li>
+                                                <li class="menu-item  nav-item ">
+                                                    <a href="gallery.html" class="nav-link">Gallery</a>
+                                                </li>
+                                                <li class="menu-item  nav-item ">
+                                                    <a href="live.html" class="nav-link">Live</a>
+                                                </li>
+                                                <li class="menu-item nav-item ">
+                                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="nav-item-inner">
+                                            <div class="header-navbar-text-1"><a href="../donate-now/index.html"
+                                                    class="h-donate-btn">Donate</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="zegen-content-wrapper">
+            <div class="zegen-content zegen-page">
+                <header id="page-title" class="page-title-wrap">
+                    <div class="page-title-wrap-inner parallax-item" data-stellar-background-ratio="0.5"
+                        data-property="no-video"> <span class="page-title-overlay"></span>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="page-title-inner">
+                                        <div class="pull-center">
+                                            <div id="breadcrumb" class="breadcrumb"><a href="../index.html">Home</a>
+                                                <span class="current">Contact Us</span></div>
+                                            <h1 class="page-title">Contact Us</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="zegen-content-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="primary" class="content-area clearfix">
+                                    <div id="page-5662" class="post-5662 page type-page status-publish hentry">
+                                        <div data-elementor-type="wp-page" data-elementor-id="5662"
+                                            class="elementor elementor-5662" data-elementor-settings="[]">
+                                            <div class="elementor-inner">
+                                                <div class="elementor-section-wrap">
+                                                    <section
+                                                        class="elementor-element elementor-element-85bde7f elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                                                        data-id="85bde7f" data-element_type="section"
+                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                                                        <div class="elementor-background-overlay"></div>
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-1f792f8 elementor-column elementor-col-33 elementor-top-column"
+                                                                    data-id="1f792f8" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-87cadd6 elementor-widget elementor-widget-zegenfeaturebox"
+                                                                                data-id="87cadd6"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegenfeaturebox.default">
+                                                                                <div class="elementor-widget-container feature-box-wrapper text-center feature-box-classic shortcode-rand-1 zegen-inline-css"
+                                                                                    data-css="&quot;.shortcode-rand-1.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-1.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 10px; }.shortcode-rand-1.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-1.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 10px; }&quot;">
+                                                                                    <div class="feature-box-inner">
+                                                                                        <div class="feature-box-icon">
+                                                                                            <span
+                                                                                                class="text-center icon-icon-light rounded-circle fbox-icon-middle ti-location-pin"></span>
+                                                                                        </div>
+                                                                                        <h5 class="feature-box-title">
+                                                                                            Our Location</h5>
+                                                                                        <div class="fbox-content"> 684
+                                                                                            West College St. Sun City,
+                                                                                            United States America.</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-681c281 elementor-column elementor-col-33 elementor-top-column"
+                                                                    data-id="681c281" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-66f0be4 elementor-invisible elementor-widget elementor-widget-zegenfeaturebox"
+                                                                                data-id="66f0be4"
+                                                                                data-element_type="widget"
+                                                                                data-settings="{&quot;_animation&quot;:&quot;none&quot;}"
+                                                                                data-widget_type="zegenfeaturebox.default">
+                                                                                <div class="elementor-widget-container feature-box-wrapper text-center feature-box-classic shortcode-rand-2 zegen-inline-css"
+                                                                                    data-css="&quot;.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 10px; }.shortcode-rand-2.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-2.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 10px; }&quot;">
+                                                                                    <div class="feature-box-inner">
+                                                                                        <div class="feature-box-icon">
+                                                                                            <span
+                                                                                                class="text-center icon-icon-light rounded-circle fbox-icon-middle ti-headphone-alt"></span>
+                                                                                        </div>
+                                                                                        <h5 class="feature-box-title">
+                                                                                            Phone Number</h5>
+                                                                                        <div class="fbox-content"><a
+                                                                                                href="tel:(+55)654-545-5418">(+55)
+                                                                                                654 - 545 - 5418</a>
+                                                                                            <br> <a
+                                                                                                href="tel:(+55)654-545-1235">(+55)
+                                                                                                654 - 545 - 1235</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-2436434 elementor-column elementor-col-33 elementor-top-column"
+                                                                    data-id="2436434" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-a354e83 elementor-widget elementor-widget-zegenfeaturebox"
+                                                                                data-id="a354e83"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="zegenfeaturebox.default">
+                                                                                <div class="elementor-widget-container feature-box-wrapper text-center feature-box-classic shortcode-rand-3 zegen-inline-css"
+                                                                                    data-css="&quot;.shortcode-rand-3.feature-box-wrapper .feature-box-inner &gt; *:nth-child(1), .shortcode-rand-3.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(1) { margin-bottom: 10px; }.shortcode-rand-3.feature-box-wrapper .feature-box-inner &gt; *:nth-child(2), .shortcode-rand-3.feature-box-wrapper &gt; .media &gt; .media-body &gt; *:nth-child(2) { margin-bottom: 10px; }&quot;">
+                                                                                    <div class="feature-box-inner">
+                                                                                        <div class="feature-box-icon">
+                                                                                            <span
+                                                                                                class="text-center icon-icon-light rounded-circle fbox-icon-middle ti-email"></span>
+                                                                                        </div>
+                                                                                        <h5 class="feature-box-title">
+                                                                                            Email Address</h5>
+                                                                                        <div class="fbox-content"><a
+                                                                                                href="mailto:info@example.com">info@example.com</a>
+                                                                                            <br> <a
+                                                                                                href="mailto:info@zegen.com">info@zegen.com</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                        class="elementor-element elementor-element-a56d9dd elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                                                        data-id="a56d9dd" data-element_type="section">
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-f923e4d elementor-column elementor-col-50 elementor-top-column"
+                                                                    data-id="f923e4d" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-f95ec70 elementor-widget elementor-widget-contactform"
+                                                                                data-id="f95ec70"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="contactform.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div
+                                                                                        class="contact-form-wrapper cf-default">
+                                                                                        <div class="contact-form">
+                                                                                            <div role="form"
+                                                                                                class="wpcf7"
+                                                                                                id="wpcf7-f6358-p5662-o1"
+                                                                                                lang="en-US" dir="ltr">
+                                                                                                <div class="screen-reader-response"
+                                                                                                    aria-live="polite">
+                                                                                                </div>
+                                                                                                <form
+                                                                                                    action="https://elementor.zozothemes.com/zegen/contact-us/#wpcf7-f6358-p5662-o1"
+                                                                                                    method="post"
+                                                                                                    class="wpcf7-form"
+                                                                                                    novalidate="novalidate">
+                                                                                                    <div
+                                                                                                        style="display: none;">
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="_wpcf7"
+                                                                                                            value="6358" />
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="_wpcf7_version"
+                                                                                                            value="5.1.9" />
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="_wpcf7_locale"
+                                                                                                            value="en_US" />
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="_wpcf7_unit_tag"
+                                                                                                            value="wpcf7-f6358-p5662-o1" />
+                                                                                                        <input
+                                                                                                            type="hidden"
+                                                                                                            name="_wpcf7_container_post"
+                                                                                                            value="5662" />
+                                                                                                    </div>
+                                                                                                    <div class="row">
+                                                                                                        <div
+                                                                                                            class="col-md-12">
+                                                                                                            <span
+                                                                                                                class="wpcf7-form-control-wrap your-name"><input
+                                                                                                                    type="text"
+                                                                                                                    name="your-name"
+                                                                                                                    value=""
+                                                                                                                    size="40"
+                                                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                                                                    aria-required="true"
+                                                                                                                    aria-invalid="false"
+                                                                                                                    placeholder="Name" /></span><br />
+                                                                                                            <span
+                                                                                                                class="wpcf7-form-control-wrap your-email"><input
+                                                                                                                    type="email"
+                                                                                                                    name="your-email"
+                                                                                                                    value=""
+                                                                                                                    size="40"
+                                                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                                                                                                    aria-required="true"
+                                                                                                                    aria-invalid="false"
+                                                                                                                    placeholder="Email" /></span><br />
+                                                                                                            <span
+                                                                                                                class="wpcf7-form-control-wrap phone"><input
+                                                                                                                    type="tel"
+                                                                                                                    name="phone"
+                                                                                                                    value=""
+                                                                                                                    size="40"
+                                                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
+                                                                                                                    aria-invalid="false"
+                                                                                                                    placeholder="Phone" /></span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="row">
+                                                                                                        <div
+                                                                                                            class="col-md-12">
+                                                                                                            <span
+                                                                                                                class="wpcf7-form-control-wrap your-message"><textarea
+                                                                                                                    name="your-message"
+                                                                                                                    cols="40"
+                                                                                                                    rows="10"
+                                                                                                                    class="wpcf7-form-control wpcf7-textarea"
+                                                                                                                    aria-invalid="false"
+                                                                                                                    placeholder="Your message"></textarea></span>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="col-md-12">
+                                                                                                            <input
+                                                                                                                type="submit"
+                                                                                                                value="Send Now"
+                                                                                                                class="wpcf7-form-control wpcf7-submit" />
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="wpcf7-response-output wpcf7-display-none"
+                                                                                                        aria-hidden="true">
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementor-element elementor-element-b2ac3a6 elementor-column elementor-col-50 elementor-top-column"
+                                                                    data-id="b2ac3a6" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-ad240ea elementor-widget elementor-widget-image"
+                                                                                data-id="ad240ea"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="image.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div class="elementor-image">
+                                                                                        <noscript><img width="768"
+                                                                                                height="888"
+                                                                                                src="../wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1.jpg"
+                                                                                                class="attachment-full size-full"
+                                                                                                alt=""
+                                                                                                srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1.jpg 768w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1-600x694.jpg 600w"
+                                                                                                sizes="(max-width: 768px) 100vw, 768px" /></noscript><img
+                                                                                            width="768" height="888"
+                                                                                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20768%20888%22%3E%3C/svg%3E'
+                                                                                            data-src="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1.jpg"
+                                                                                            class="lazyload attachment-full size-full"
+                                                                                            alt=""
+                                                                                            data-srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1.jpg 768w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/11/contact-bg-5-1-1-600x694.jpg 600w"
+                                                                                            data-sizes="(max-width: 768px) 100vw, 768px" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                        class="elementor-element elementor-element-48429e8 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+                                                        data-id="48429e8" data-element_type="section">
+                                                        <div class="elementor-container elementor-column-gap-no">
+                                                            <div class="elementor-row">
+                                                                <div class="elementor-element elementor-element-52c48c7 elementor-column elementor-col-100 elementor-top-column"
+                                                                    data-id="52c48c7" data-element_type="column">
+                                                                    <div
+                                                                        class="elementor-column-wrap  elementor-element-populated">
+                                                                        <div class="elementor-widget-wrap">
+                                                                            <div class="elementor-element elementor-element-abbd9c6 elementor-widget elementor-widget-google_maps"
+                                                                                data-id="abbd9c6"
+                                                                                data-element_type="widget"
+                                                                                data-widget_type="google_maps.default">
+                                                                                <div class="elementor-widget-container">
+                                                                                    <div class="elementor-custom-embed">
+                                                                                        <iframe frameborder="0"
+                                                                                            scrolling="no"
+                                                                                            marginheight="0"
+                                                                                            marginwidth="0"
+                                                                                            src="https://maps.google.com/maps?q=8765%20W%20Higgins%20Rd%2C%20Chicago%2C%20IL%2060631%2C%20United%20States&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+                                                                                            aria-label="8765 W Higgins Rd, Chicago, IL 60631, United States"></iframe>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer footer-template-custom">
+            <div class="footer-middle-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="text-2" class="widget widget_text">
+                                    <h3 class="widget-title">About Zegen</h3>
+                                    <div class="textwidget">
+                                        <p>We are a community of people loving each other and our Lord. Be completely
+                                            humble and gentle, be patient, bearing with one another in love.We are a
+                                            community Lord.</p>
+                                    </div>
+                                </section>
+                                <section id="zozo_social_widget-1" class="widget zozo_social_widget">
+                                    <ul
+                                        class="nav social-icons social-widget widget-content social-squared social-white social-h-white social-bg-own social-hbg-black">
+                                        <li><a href="https://www.facebook.com/zozothemes.official/" target="_blank"
+                                                class="social-fb"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/zozothemes" target="_blank"
+                                                class="social-twitter"><i class="ti-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/zozotheme/" target="_blank"
+                                                class="social-instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/zozothemesofficial/" target="_blank"
+                                                class="social-pinterest"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCAOkwuYxJuOqiYAj1Vy5JIg"
+                                                target="_blank" class="social-youtube"><i class="ti-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="nav_menu-1" class="widget widget_nav_menu">
+                                    <h3 class="widget-title">Quick Links</h3>
+                                    <div class="menu-quick-links-container">
+                                        <ul id="menu-quick-links" class="menu">
+                                            <li id="menu-item-6247"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6247">
+                                                <a href="#">Who We Are?</a></li>
+                                            <li id="menu-item-6248"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6248">
+                                                <a href="#">Support and FAQ&#8217;s</a></li>
+                                            <li id="menu-item-6249"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6249">
+                                                <a href="#">Payments</a></li>
+                                            <li id="menu-item-6250"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6250">
+                                                <a href="#">Donations Terms</a></li>
+                                            <li id="menu-item-6251"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6251">
+                                                <a href="#">Volunteer</a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="zegen_latest_post_widget-1" class="widget zegen_latest_post_widget">
+                                    <h3 class="widget-title">Latest News</h3>
+                                    <div class="widg-content">
+                                        <ul class="side-newsfeed">
+                                            <li>
+                                                <div class="side-item">
+                                                    <div class="side-image"> <a
+                                                            href="../giving-back-uganda-training-centers/index.html"
+                                                            rel="bookmark"><noscript><img width="80" height="80"
+                                                                    src="../wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-80x80.jpg"
+                                                                    class="img-responsive wp-post-image" alt=""
+                                                                    srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-80x80.jpg 80w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-300x300.jpg 300w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-100x100.jpg 100w"
+                                                                    sizes="(max-width: 80px) 100vw, 80px" /></noscript><img
+                                                                width="80" height="80"
+                                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+                                                                data-src="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-80x80.jpg"
+                                                                class="lazyload img-responsive wp-post-image" alt=""
+                                                                data-srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-80x80.jpg 80w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-300x300.jpg 300w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church_theme_blog_9-1-100x100.jpg 100w"
+                                                                data-sizes="(max-width: 80px) 100vw, 80px" /></a></div>
+                                                    <div class="side-item-text"> <a class="themeh-color"
+                                                            href="../giving-back-uganda-training-centers/index.html"
+                                                            rel="bookmark">Giving Back – Uganda Training Centers</a>
+                                                        <div class="comments-wrap">
+                                                            <div class="meta-left"> <span class="">Oct 21, 2019</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="side-item">
+                                                    <div class="side-image"> <a
+                                                            href="../spirit-of-the-lord-is-from-the-new-life/index.html"
+                                                            rel="bookmark"><noscript><img width="80" height="80"
+                                                                    src="../wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-80x80.jpg"
+                                                                    class="img-responsive wp-post-image" alt=""
+                                                                    srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-80x80.jpg 80w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-300x300.jpg 300w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-100x100.jpg 100w"
+                                                                    sizes="(max-width: 80px) 100vw, 80px" /></noscript><img
+                                                                width="80" height="80"
+                                                                src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2080%2080%22%3E%3C/svg%3E'
+                                                                data-src="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-80x80.jpg"
+                                                                class="lazyload img-responsive wp-post-image" alt=""
+                                                                data-srcset="https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-80x80.jpg 80w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-300x300.jpg 300w, https://elementor.zozothemes.com/zegen/wp-content/uploads/sites/2/2019/10/church-theme-blog-7-1-100x100.jpg 100w"
+                                                                data-sizes="(max-width: 80px) 100vw, 80px" /></a></div>
+                                                    <div class="side-item-text"> <a class="themeh-color"
+                                                            href="../spirit-of-the-lord-is-from-the-new-life/index.html"
+                                                            rel="bookmark">Spirit Of The Lord Is, From The New Life</a>
+                                                        <div class="comments-wrap">
+                                                            <div class="meta-left"> <span class="">Oct 21, 2019</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-middle-sidebar">
+                                <section id="zegen_mailchimp_widget-1" class="widget zegen_mailchimp_widget">
+                                    <h3 class="widget-title">Newsletter</h3>
+                                    <div class="mailchimp-wrapper">
+                                        <form class="zozo-mc-form" id="zozo-mc-form" method="post">
+                                            <p class="zozo-mc-subtitle">Lorem ipsum is placeholder text commonly used in
+                                                the graphic, print, and publishing industries for previewing layouts and
+                                                visual mockups.</p> <input type="hidden" name="zegen_mc_listid"
+                                                value="faba7d110e" />
+                                            <div class="input-group"> <input type="text"
+                                                    class="form-control zozo-mc-email" id="zozo-mc-email"
+                                                    placeholder="Email Address" name="zozo_mc_email"> <input
+                                                    class="input-group-addon zozo-mc btn btn-default" type="button"
+                                                    name="Sign Up" value="Sign Up" /></div>
+                                        </form>
+                                        <div class="mc-notice-group" data-success="Success." data-fail="Failure."> <span
+                                                class="mc-notice-msg"></span></div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-bottom-items nav pull-left">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                        <div class="copyright-text-wrap">© 2020 Theme by <a
+                                                href="https://zozothemes.com/" target="_blank">Zozothemes</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="footer-bottom-items nav pull-center">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner"></div>
+                                </li>
+                            </ul>
+                            <ul class="footer-bottom-items nav pull-right">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                        <div class="menu-footer-bottom-menu-container">
+                                            <ul id="menu-footer-bottom-menu" class="footer-menu">
+                                                <li id="menu-item-6124"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6124">
+                                                    <a href="#">Privacy</a></li>
+                                                <li id="menu-item-6245"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6245">
+                                                    <a href="#">Sermons</a></li>
+                                                <li id="menu-item-6246"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6246">
+                                                    <a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <a href="#" class="back-to-top position-right" id="back-to-top"><i class="ti-angle-up"></i></a>
+        </footer>
+    </div>
+   
+    <script>
+        /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+        if (typeof WebFontConfig === "undefined") {
+            WebFontConfig = new Object();
+        }
+        WebFontConfig['google'] = {
+            families: ['Open+Sans:400', 'Poppins:700,400,600,500', 'Dancing+Script:700&amp;subset=latin,']
+        };
+
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'js/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script> <noscript>
+        <style>
+            .lazyload {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <script data-noptimize="1">
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+    </script>
+    <script src='js/lazysizes.minbf41.js?ao_version=2.7.3'></script>
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+
+    <script type='text/javascript'>
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "downloadImage": "Download image"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "version": "2.9.13",
+            "urls": {
+                "assets": "https:\/\/elementor.zozothemes.com\/zegen\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "settings": {
+                "page": [],
+                "general": {
+                    "elementor_global_image_lightbox": "yes",
+                    "elementor_lightbox_enable_counter": "yes",
+                    "elementor_lightbox_enable_fullscreen": "yes",
+                    "elementor_lightbox_enable_zoom": "yes",
+                    "elementor_lightbox_enable_share": "yes",
+                    "elementor_lightbox_title_src": "title",
+                    "elementor_lightbox_description_src": "description"
+                },
+                "editorPreferences": []
+            },
+            "post": {
+                "id": 5544,
+                "title": "About%20Us%20%E2%80%93%20Zegen",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+    </script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>
