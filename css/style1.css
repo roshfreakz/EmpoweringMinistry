@@ -67837,28 +67837,63 @@ screen and (max-height:300px) {
 }
 
 
-.text-theme{
+.text-theme {
     color: #bf0a30;
 }
 
 
-.main-logo h4{
+.main-logo h4 {
     margin: 2px 10px;
 }
 
-.sticky-logo h4{
+.sticky-logo h4 {
     margin: 2px 10px;
 }
 
 .sticky-logo a,
-.main-logo a{
+.main-logo a {
     display: flex;
 }
 
-.header-sticky .sticky-logo, .sticky-scroll.show-menu .sticky-logo{
+.header-sticky .sticky-logo,
+.sticky-scroll.show-menu .sticky-logo {
     padding: 15px;
 }
 
-.header-sticky .navbar-items>li, .sticky-scroll.show-menu .navbar-items>li{
+.header-sticky .navbar-items>li,
+.sticky-scroll.show-menu .navbar-items>li {
     line-height: 90px;
+}
+
+
+.nav-item a.li_live {
+    transform: translate(0);
+}
+
+.nav-item a.li_live span {
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    color: #bf0a30;
+}
+
+
+.nav-item a.li_live:after {
+    content: "\e6ad";
+    font-family: 'themify';
+    position: absolute;
+    color: #bf0a30;
+    right: 10px;
+    font-size: 30px;
+    opacity: 0;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-name: shadow-blink;
+    -webkit-animation-name: shadow-blink;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
